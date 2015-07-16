@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+
+		<style>
+			#container {
+				position: absolute;
+				background-color: red;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+			}
+			section {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				font-size: 16px;
+			}
+			section:nth-child(even) {
+				background-color: orangered;
+			}
+			section:nth-child(odd) {
+				background-color: green;
+			}
+		</style>
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="hammer.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<section>1</section>
+			<section></section>
+			<section></section>
+			<section></section>
+
+		</div>
+		<script>
+			var curIdx = 0;
+			var myElement = document.getElementById('container');
+			var mc = new Hammer(myElement);
+			mc.get('pan').set({
+				direction: Hammer.DIRECTION_ALL
+			});
+			var startX = 0,
+				startY = 0,
+				endX = 0,
+				endY = 0;
+			mc.on('panstart ', function(ev) {
+				var t = ev.target,
+					nName = t.nodeName,
+					_t = ev.type;
+				if (nName == "SECTION") {
+					startX = ev.deltaX;
+					startY = ev.deltaY;
+				}
+			});
+			mc.on('panend', function(ev) {
+				var t = ev.target,
+					nName = t.nodeName,
+					_t = ev.type;
+				if (curIdx >= 0 && curIdx <= 3) {
+					if (nName == "SECTION") {
+						endX = ev.deltaX;
+						endY = ev.deltaY;
+						var _x = endX - startX;
+						var _y = endY - startY;
+						if (_y > 0) {
+							t.innerText = "往上翻" + (curIdx + 1);
+							curIdx--;
+							if (curIdx < 0) curIdx = 0;
+						} else {
+							t.innerText = "往下翻" + (curIdx + 1);
+							curIdx++;
+							if (curIdx > 3) curIdx = 3;
+						}
+						showSection(curIdx);
+					}
+				}
+			});
+
+			function showSection(which, ani) {
+				$('section').eq(which).slideDown().siblings().slideUp()
+			}
+		</script>
+
+	</body>
+
+</html>
