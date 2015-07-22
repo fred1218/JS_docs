@@ -8,7 +8,7 @@ require.config({
         m21: "lib2/m1"
     }
 });
-require(['m1', 'lib2/m1'], function (m1, m2) {
+require(['m1', 'm21'], function (m1, m2) {
     m1.getName();
     m2.getName();
 });
