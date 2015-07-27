@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#animater{
+                width: 150px;
+                background:activeborder;
+                border: 1px solid black;
+                /*为了移动，需设置此属性*/
+                position: relative;
+            }
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="animater">
+			stop()方法测试
+		</div>
+		<div id="button">
+			<input type="button" id="button1" value="stop()" />
+			<input type="button" id="button2" value="stop(true)" />
+			<input type="button" id="button3" value="stop(false,true)" />
+			<input type="button" id="button4" value="stop(true,true)" />
+			<input type="button" id="button5" value="stop(true,false)" />
+			<input type="button" id="button6" value="stop(false,false)" />
+
+		</div>
+		<script type="text/javascript">
+			$('#animater').animate({
+		                    'right':-800
+		                }, 3000).animate({'font-size':'16px'},'normal').animate({'font-size':'26px'},'normal').animate({'font-size':'36px'},'normal').animate({'font-size':'46px'},'normal').animate({'font-size':'56px'},'normal').animate({'opacity':0},'normal').animate({'opacity':1},'normal').animate({'left':200,'font-size':'16px'},'normal');
+		
+		
+		
+		        
+		                //           点击不同的button执行不同的操作
+		        
+		                $('#button1').click(function(){
+		                    //默认参数是false，不管写一个false还是两个false还是没写false效果一样
+		                    $('#animater').stop();
+		                });
+		                $('#button2').click(function(){
+		                    //第二个参数默认false
+		                    $('#animater').stop(true);
+		                });
+		                $('#button3').click(function(){
+		                    $('#animater').stop(false,true);
+		                });
+		                $('#button4').click(function(){
+		                    $('#animater').stop(true,true);
+		                });
+		                $('#button5').click(function(){
+		                    $('#animater').stop(true,false);
+		                });
+		                $('#button6').click(function(){
+		                    $('#animater').stop(false,false);
+		                });
+		</script>
+	</body>
+
+</html>
