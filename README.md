@@ -14,4 +14,4 @@ https://github.com/Windancer/javascript-style-guide
 
 https://github.com/FullStackGroup/Mars
 
-
+https://github.com/fex-team/styleguide
