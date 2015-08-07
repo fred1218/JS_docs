@@ -10,7 +10,7 @@ https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md
 
 http://ued.taobao.org/blog/category/bowen/frontend/
 
-https://github.com/Windancer/javascript-style-guide
+--https://github.com/Windancer/javascript-style-guide
 
 https://github.com/FullStackGroup/Mars
 
