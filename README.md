@@ -15,3 +15,5 @@ https://github.com/Windancer/javascript-style-guide
 https://github.com/FullStackGroup/Mars
 
 https://github.com/fex-team/styleguide
+
+http://justjavac.com/web/2012/05/25/15-html-best-practices-web-developer.html
