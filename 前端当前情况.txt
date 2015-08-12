@@ -28,8 +28,14 @@ D类需求：Hybird应用开发【应用类似amaze，semantic等UI类型的应�
           【D】类webview，hybird类的开发可以用网上的移动开发框架，framework，amaze等
 		  
 5.针对ie8对canvas和css3和H5的兼容性解决方案
+		权威的解决方案[解决各种跨浏览器兼容性问题]
+		https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills		
+
 		polyfills 要ie8支持h5和canvas的方案,html5.js
 		http://www.ziliao1.com/Article/Show/7816A4595D1388E61F9BDF43581DD211.html
+		
+		https://github.com/arv/ExplorerCanvas
+		https://github.com/es-shims/es5-shim
 
 
 =========================未来要做的=========================
