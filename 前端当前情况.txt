@@ -16,19 +16,12 @@ D类需求：Hybird应用开发【应用类似amaze，semantic等UI类型的应�
 
 3.网上js库和jquery插件
           目前我们在库上的选择主要是jquery和zepto。
-
-          表单插件 jquery.form.js 封装了ajax以及ajax提交form的方法，推荐php都要熟悉这个框架
-          校验插件 jquery.validation.js
-          全屏插件 swiper.js和fullpage.js
-          滚动条插件 nicescroll，malihu-custom-scrollbar移动端可用的iscroll
-          轮播控件 swiper,superslide等
-          上传插件，我自己去封装个带进度条的，或者使用uploadify或者jquery.upload.js
-	      Jquery插件网上轮子很多，可以自己做也可以网上寻找更好的，定制功能很多的情况自己写插件。
-	      所见所得ckeditor,ueditor，还有markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
-	      图表选型hightchart，echart（涉及地图可选用）
-	      -----------------------------------------------------
-	      建议php都把jquery API熟悉了，因为需要后台的地方，主流的还是jquery和原生js，方便起见还是用jquery，所以各种常见插件的api等还需要熟悉的。
-	      需要特别了解的是了解js事件流【dom事件的注册与dom事件的委托】，这个对后端来说也很重要。
+          插件的选型和对比见下面
+          建议php都把jquery API熟悉了，因为需要后台的地方，主流的还是jquery和原生js，为了方便还是用jquery较多，所以各种常见插件的api和jquery的API等细节都要关注。
+          需要特别了解的是了解js事件流【dom事件的注册与dom事件的委托】，这个对后端来说也很重要。
+	     
+      
+	     
 
 
 4.开发方式
@@ -76,6 +69,41 @@ D类需求：Hybird应用开发【应用类似amaze，semantic等UI类型的应�
         WebGL
         本地存储
 
-5.各框架和插件的优劣对比【团队讨论和网上查】
+=========================页面插件选型=========================
+表单插件 jquery.form.js 封装了ajax以及ajax提交form的方法，推荐php都要熟悉这个框架
+校验插件 jquery.validation.js
+全屏插件 swiper.js和fullpage.js
+轮播控件 swiper,superslide等
+上传插件 使用uploadify或者jquery.upload.js，自己封装
+
+所见所得ckeditor,ueditor，还有markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
+图表选型hightchart，echart（涉及地图可选用）
+select:
+	select2
+	http://select2.github.io/examples.html	
+	
+	sumoselect
+	http://hemantnegi.github.io/jquery.sumoselect/
+	
+dialog:  
+	artDialog
+	http://aui.github.io/artDialog/doc/index.html  
+	http://aui.github.io/popupjs/test/bubble.html
+	
+	
+	Popupjs	
+	http://aui.github.io/popupjs/index.html
+	http://aui.github.io/popupjs/doc/selectbox.html
+
+滚动条
+	niceScroll  http://nicescroll.areaaperta.com/
+	iscroll  https://github.com/cubiq/iscroll/tree/master
+	custom scrollbar  https://github.com/malihu/malihu-custom-scrollbar-plugin
+
+Grid表格
+	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
+	dataTables http://datatables.net/
+
+
 
 
