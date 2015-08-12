@@ -5,7 +5,7 @@
     //        },
     //        waitShowName:function(){
     //            setTimeout(function(){
-    //                this.showName.bind(this);//ÕâÊ±µÄthisÊÇwindow
+    //                this.showName.bind(this);//è¿™æ—¶çš„thisæ˜¯window
     //            },1000); //????
     //        }
     //    };
@@ -26,7 +26,7 @@
     };
     perso.waitShowName();
 
-1.ËùÎ½´«Öµ´«ÒıÓÃ
+1.ä¼ å€¼ä¼ å¼•ç”¨
 var setName=function(o){
   o.name='xiaoha';
   o={};
@@ -53,16 +53,16 @@ var foo = 2;
 console.log(foo);
 }
 
-±äÁ¿¶¨Òå¼ÓvarÓë²»¼ÓvarµÄÇø±ğ
+å˜é‡å®šä¹‰åŠ varä¸ä¸åŠ varçš„åŒºåˆ«
 var a, b = null;
-        console.log(a);
-        console.log(b);
-        console.log(c);
-    nullºÍundefinedµÄÇø±ğ
+	console.log(a);
+	console.log(b);
+	console.log(c);
+    nullå’Œundefinedçš„åŒºåˆ«
 
-    obj=obj||{};Ê²Ã´ÒâË¼
+    
 
- ±Õ°üÀí½â£¨ÊÇÊ²Ã´£¬Ê²Ã´×÷ÓÃ£©
+ é—­åŒ…ç†è§£ï¼ˆæ˜¯ä»€ä¹ˆï¼Œä»€ä¹ˆä½œç”¨ï¼‰
 function a(x) {
             return function b(y) {
                 return y + x++;
@@ -76,62 +76,64 @@ function a(x) {
         console.log(a2(10));
 
 
-3 Êı¾İ»ù±¾ÀàĞÍÓĞ£¿
+3 æ•°æ®åŸºæœ¬ç±»å‹æœ‰ï¼Ÿ
 var s1='123';
 var s2=new String('123');
 s1.name='zhangsan';
 s2.name='lisi';
 
-×ÖÃæÁ¿Óënew´´½¨µÄÊı¾İÓĞÉ¶Çø±ğ
-4 js string²Ù×÷£¬array²Ù×÷
+å­—é¢é‡ä¸newåˆ›å»ºçš„æ•°æ®æœ‰å•¥åŒºåˆ«
+4 js stringæ“ä½œï¼Œarrayæ“ä½œ
 var arr = [11,2,8,28,5,8,4,8,8];
-´Ó´óµ½Ğ¡ÅÅĞò
-É¾³ıÖØ¸´$.grep»òArray.filter
+ä»å¤§åˆ°å°æ’åº
+åˆ é™¤é‡å¤$.grepæˆ–Array.filter
 
-//es5µÄĞÂapi
+//es5çš„æ–°api
 Array.every(function(ele){});
 Array.some(function(ele){});
 
-substringÓësubstrµÄÇø±ğ
-substring ÆğÊ¼µã½áÊøµã
-substrÆğÊ¼µã£¬³¤¶È
+substringä¸substrçš„åŒºåˆ«
+substring èµ·å§‹ç‚¹ç»“æŸç‚¹
+substrèµ·å§‹ç‚¹ï¼Œé•¿åº¦
 
 
-setTimeoutÓësetInterval()µÄÇø±ğ
+setTimeoutä¸setInterval()çš„åŒºåˆ«
 
-timer&&clearInterval(timer);Ê²Ã´ÒâË¼
+obj=obj||{};ä»€ä¹ˆæ„æ€
 
-5 this¡¾×ö²å¼ş£¬½¨¹«¹²Ä£¿é£¬´´½¨Àà±ØĞëÖªµÀ¡¿
-jsÖĞthisÊÇÊ²Ã´£¬¼¸ÖÖÇé¿ö
-callÓëapply¡¾jquery£¬js²å¼şÖĞĞ´»Øµ÷±ØĞëÖªµÀµÄ¡¿
+timer&&clearInterval(timer);ä»€ä¹ˆæ„æ€
 
-6 ´´½¨¶ÔÏó¼¸ÖÖ·½Ê½£¬prototype,constructor,__prop__Çø±ğ
-ÈçºÎÅĞ¶ÏobjµÄÊôĞÔÊÇÀ´×ÔÔ­ĞÍÁ´»¹ÊÇ×ÔÉíÊôĞÔ
+5 thisã€åšæ’ä»¶ï¼Œå»ºå…¬å…±æ¨¡å—ï¼Œåˆ›å»ºç±»å¿…é¡»çŸ¥é“ã€‘
+jsä¸­thisæ˜¯ä»€ä¹ˆï¼Œå‡ ç§æƒ…å†µ
+callä¸applyã€jqueryï¼Œjsæ’ä»¶ä¸­å†™å›è°ƒå¿…é¡»çŸ¥é“çš„ã€‘
+
+6 åˆ›å»ºå¯¹è±¡å‡ ç§æ–¹å¼ï¼Œprototype,constructor,__prop__åŒºåˆ«
+å¦‚ä½•åˆ¤æ–­objçš„å±æ€§æ˜¯æ¥è‡ªåŸå‹é“¾è¿˜æ˜¯è‡ªèº«å±æ€§
 .hasOwnProperty('')
 
 7 jquery
-jqueryÊÂ¼ş×¢²á£¬¶¯Ì¬Éú³ÉµÄÔªËØÊÂ¼ş×¢²á
-jquery±éÀú $.each  $.map $.grepµÈ
-$.extend();µİ¹éºÏ²¢¼ÓÊ²Ã´²ÎÊı
-jqueryÖĞµÄajaxĞ´·¨£¿ÊµÏÖ¹ı³Ì£¿Êı¾İ¸ñÊ½
-jquery²å¼ş£¬À©Õ¹µÄÊÇÊ²Ã´
+jqueryäº‹ä»¶æ³¨å†Œï¼ŒåŠ¨æ€ç”Ÿæˆçš„å…ƒç´ äº‹ä»¶æ³¨å†Œ
+jqueryéå† $.each  $.map $.grepç­‰
+$.extend();é€’å½’åˆå¹¶åŠ ä»€ä¹ˆå‚æ•°
+jqueryä¸­çš„ajaxå†™æ³•ï¼Ÿå®ç°è¿‡ç¨‹ï¼Ÿæ•°æ®æ ¼å¼
+jqueryæ’ä»¶ï¼Œæ‰©å±•çš„æ˜¯ä»€ä¹ˆ
 
-8 jsÈçºÎµ÷ÊÔ
-consoleÓĞÄÄĞ©·½·¨?
+8 jså¦‚ä½•è°ƒè¯•
+consoleæœ‰å“ªäº›æ–¹æ³•?
 
-9 ÆäËû
-cookie£¿json£¿storage£¿
+9 å…¶ä»–
+cookieï¼Ÿjsonï¼Ÿstorageï¼Ÿ
 document.cookie
 window.localstorage
 
 
-Êä³ö½á¹û
+è¾“å‡ºç»“æœ
 function a(){return 2}
 			console.debug(a())
 			function a(){return 1}
 //			var a=function(){return 1};
 
-¶ººÅÔËËã·û
+é€—å·è¿ç®—ç¬¦
 a=(1,2,3,4);
 alert(a);//4
 
@@ -139,15 +141,5 @@ alert(a);//4
 return
 {name:'zhangsan'}
 
-µÄ½á¹û
-
-
-
-
-
-
-
-
-
-
+çš„ç»“æœ
 
