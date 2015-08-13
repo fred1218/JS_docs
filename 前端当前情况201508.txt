@@ -51,7 +51,7 @@ D类需求：Hybird应用开发【应用类似amaze，semantic等UI类型的应�
 2.前端工程化【ABCD类都需要】
         grunt/gulp 自动化工具构建【压缩合并】前端js/css等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】
-        前端模板的应用(artTemplete,mustache,handerbar,ejs,jad等等)
+        前端模板的应用(artTemplete,mustache,handlebars;ejs,jad等等)
         遵循MVC模式开发编写前端模块[可以自己遵循模式开发，也可用上面说的的js框架]【***】【B类需求】
         需要给前端自己一个服务器，和建立公司自己的一个CDN，存放js文件和其他静态资源css文件。前端项目完成后，部署到服务器，后端引入各种资源文件或者作开发，直接从前端部署过的项目上拷贝源码。【****】
 
