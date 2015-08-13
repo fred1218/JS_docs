@@ -105,6 +105,26 @@ timer&&clearInterval(timer);什么意思
 
 5 this【做插件，建公共模块，创建类必须知道】
 js中this是什么，几种情况
+var fullname = 'John Doe';
+
+var obj = {
+
+fullname: 'Colin Ihrig',
+prop: {
+
+fullname: 'Aurelio De Rosa',
+
+getFullname: function() {
+
+return this.fullname;
+
+}}};
+
+console.log(obj.prop.getFullname());
+
+var test = obj.prop.getFullname;
+
+console.log(test());
 call与apply【jquery，js插件中写回调必须知道的】
 
 6 创建对象几种方式，prototype,constructor,__prop__区别

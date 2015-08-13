@@ -108,3 +108,6 @@ dialog:
 Grid表格
 	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
 	dataTables http://datatables.net/
+
+前端加密md5加密等，一般用对等加密
+    网上插件
