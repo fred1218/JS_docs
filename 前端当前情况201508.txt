@@ -49,7 +49,7 @@ D类需求：Hybird应用开发【应用类似amaze，semantic等UI类型的应�
         对于即时类应用也可以用node开发
 
 2.前端工程化【ABCD类都需要】
-        grunt/gulp 自动化工具构建【压缩合并】前端js/css等【*****】
+        grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】
         前端模板的应用(artTemplete,mustache,handlebars;ejs,jad等等)
         遵循MVC模式开发编写前端模块[可以自己遵循模式开发，也可用上面说的的js框架]【***】【B类需求】
