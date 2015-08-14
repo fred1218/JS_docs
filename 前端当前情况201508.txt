@@ -54,7 +54,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 2.前端工程化【ABCD类都需要】
         grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】
-        前端模板的应用(artTemplete,mustache,handlebars;ejs,jade等等)
+        前端模板的应用(artTemplete,doT,mustache,handlebars;ejs,jade,juicer,baiduTemplete,kissyTemplete等等)
         遵循MVC模式开发编写前端模块[可以自己遵循模式开发，也可用上面说的的js框架]【***】【B类需求】
         需要给前端自己一个服务器，和建立公司自己的一个CDN，存放js文件和其他静态资源css文件。前端项目完成后，部署到服务器，后端引入各种资源文件或者作开发，直接从前端部署过的项目上拷贝源码。【****】
 
@@ -89,6 +89,11 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
 图表报表选型hightchart，Chart.js，echart（涉及地图可选用）
 滚动监测加载插件 [自己写了个]
+日期控件
+	bootstrap-date-picker
+	myDate97
+	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
+
 select控件:
 	select2
 	http://select2.github.io/examples.html	
@@ -102,6 +107,8 @@ dialog:
 	artDialog
 	http://aui.github.io/artDialog/doc/index.html  
 	http://aui.github.io/popupjs/test/bubble.html
+	
+	web弹层组件 https://github.com/sentsin/layer  http://layer.layui.com
 
 	Popupjs
 	http://aui.github.io/popupjs/index.html
