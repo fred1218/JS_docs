@@ -12,3 +12,4 @@ IDE的环境和文件的编码统一使用UTF-8
 
 html
 语义规范
+a标签的href统一用javascript:void(0);
