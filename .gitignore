@@ -1,0 +1,7 @@
+*.name
+.idea/encodings.xml
+.idea/misc.xml
+.idea/workspace.xml
+.idea/规范和示例插件.iml
+.idea/modules.xml
+.idea/vcs.xml
