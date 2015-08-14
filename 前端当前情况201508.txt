@@ -95,6 +95,8 @@ select控件:
 	
 	sumoselect
 	http://hemantnegi.github.io/jquery.sumoselect/
+
+	还有简单封装的selectBox
 	
 dialog:  
 	artDialog
