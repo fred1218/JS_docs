@@ -1,6 +1,6 @@
 说明：
 A类需求：pc端（特效较多，单向交互多），门户，移动端H5活动页面
-B类需求：PC端单页应用，后台管理系统等双向交互较多的系统，移动端单页应用【类似于前述的双向交互较多的需求】
+B类需求：单页应用[PC,移动端]，PC端后台管理系统等双向交互较多的系统【类似于前述的双向交互较多的需求】
 C类需求：移动端，微信平台H5游戏。【纯前端工作】
 D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需求多】
 【*****】优先级
@@ -40,7 +40,8 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 =========================未来要做的=========================
 1.SPA技术选型
         【B类需求】
-        基于MV*框架angular, react等
+        基于MV*框架angular（适用于数据原型处理复杂的）, react(数据原型简单)等
+         mobile-angular-ui https://github.com/mcasimir/mobile-angular-ui
         这两个是目前流行的js mvc（MVVM）框架，有数据绑定，依赖注入等特性，路由控制交由前端,还有vue.js,backbone和ember.js 等MVC框架
 		【D类需求】
 		jQueryMobile, sencha Touch,appjs等js框架
@@ -53,7 +54,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 2.前端工程化【ABCD类都需要】
         grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】
-        前端模板的应用(artTemplete,mustache,handlebars;ejs,jad等等)
+        前端模板的应用(artTemplete,mustache,handlebars;ejs,jade等等)
         遵循MVC模式开发编写前端模块[可以自己遵循模式开发，也可用上面说的的js框架]【***】【B类需求】
         需要给前端自己一个服务器，和建立公司自己的一个CDN，存放js文件和其他静态资源css文件。前端项目完成后，部署到服务器，后端引入各种资源文件或者作开发，直接从前端部署过的项目上拷贝源码。【****】
 
@@ -86,7 +87,8 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 上传插件 使用uploadify或者jquery.upload.js，自己封装
 所见所得ckeditor,ueditor
 markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
-图表选型hightchart，Chart.js，echart（涉及地图可选用）
+图表报表选型hightchart，Chart.js，echart（涉及地图可选用）
+滚动监测加载插件 [自己写了个]
 select控件:
 	select2
 	http://select2.github.io/examples.html	
@@ -113,6 +115,26 @@ dialog:
 Grid表格
 	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
 	dataTables http://datatables.net/
+
+UI框架（github）
+    semantic https://github.com/Semantic-Org/Semantic-UI
+    flatUI https://github.com/designmodo/Flat-UI
+    material-ui https://github.com/callemall/material-ui
+    amazeui https://github.com/allmobilize/amazeui
+    uikit https://github.com/uikit/uikit http://www.getuikit.net/
+    bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
+    Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
+    Centurion https://github.com/justinhough/Centurion
+    framework7 http://framework7.taobao.org/
+    mui https://github.com/dcloudio/mui
+    muicss https://github.com/dcloudio/mui
+css：
+    PureCss https://github.com/yahoo/pure
+    foundation https://github.com/zurb/foundation
+kit
+    jquerytools https://github.com/jquerytools/jquerytools/tree/v1.2.7
+    jquery-ui https://github.com/jquery/jquery-ui
+
 
 前端加密md5加密等，一般用对等加密
     网上插件
