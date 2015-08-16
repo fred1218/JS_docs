@@ -31,6 +31,8 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 		https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
 		http://modernizr.com/
 		
+		html5shiv  https://github.com/aFarkas/html5shiv
+		
 
 		polyfills 要ie8支持h5和canvas的方案,html5.js
 		http://www.ziliao1.com/Article/Show/7816A4595D1388E61F9BDF43581DD211.html
@@ -88,8 +90,11 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 上传插件 使用uploadify或者jquery.upload.js，自己封装
 所见所得ckeditor,ueditor
 markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
-图表报表选型hightchart，Chart.js，echart（涉及地图可选用）
+图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）
 滚动监测加载插件 [自己写了个]
+异步加载js文件 head.js http://headjs.com/  https://github.com/headjs/headjs
+图片懒加载
+	lazysizes https://github.com/aFarkas/lazysizes
 日期控件
 	bootstrap-date-picker
 	myDate97
