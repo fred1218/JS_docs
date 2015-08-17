@@ -1,31 +1,64 @@
 风格由IDE来统一
+    IDE的环境和文件的编码统一使用UTF-8
 =============================
 重点在编程细节上：
+
 命名，变量，函数
 
-for循环,退出循环(continue;break)
-
-try{}catch(){}finally{}
-
-基于数据驱动的应用开发，先定义数据模型，定义getter，setter方法等
+    变量的上下文没有块级作用域，只有函数作用域。
 
 return影响的函数或变量声明提前
 
-闭包回调等高阶函数的使用
+for循环,退出循环(continue;break)
+    退出单个迭代用continue；退出整个循环用break
 
-函数柯里化定义service API
+异常处理
+    try{}catch(){}finally{}
+
+
 
 requirejs或seaJs的使用
+    异步模块定义 所有依赖全部拉取之后（依赖前置），才能使用
+    定义
+        define(id?,dep?,function(){
+            //dep为定义此模块的时候，此模块的依赖。模块中的方法需要依赖全部拉取完才能执行
+            return XXX//只有return出来（闭包），才能取到这个模块，执行模块中的方法，否则加载好之后的模块中的api都是全局的，
+        });
+    使用 依赖按需加载 (依赖就近)
+        require.config({});
+        require([],function(){});
+
+    通用模块定义 需要哪个依赖,加载完成之后就执行这个模块
+    定义
+        define(function(require, exports, module){
+            var a = require('./a');
+            a.methodA();
+            //拉取依赖模块之后就回立即执行，不会像AMD一样全拉取完才执行
+            var b = require('./b');
+             b.methodB();
+            });
+    使用
+        seaJS.use();
 
 模板使用
 
 图片多，用懒加载方式
 
 dom on ready与window.onload事件的使用
+    domReady表示document加载好之后就执行
+    页面有图片的操作，比如读取img的height或者width等需求时，使用window.onload，表示dom加载完成，资源也下载完成时候执行
 
 ajax全部使用延迟对象deferred对象
+    使用前$.ajaxSetup({/*定义通用的属性,比如beforeSend，complete*/});
+    var jqXhr=$.ajax();
+    jqXhr.done(function(data){}).fail(function(){});
 
+
+高级方法：
+基于数据驱动的应用开发，先定义数据模型，定义getter，setter方法等
 GC
+闭包回调等高阶函数的使用
+函数柯里化定义service API
 
 jq插件的写法：
     数据model，配置setting，状态变量stateData
