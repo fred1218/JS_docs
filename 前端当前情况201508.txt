@@ -93,6 +93,9 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
         本地存储
 
 =========================页面插件选型=========================
+库
+jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/）
+
 表单插件 jquery.form.js 封装了ajax以及ajax提交form的方法，推荐php都要熟悉这个框架
 校验插件 jquery.validation.js
 全屏插件 swiper.js和fullpage.js
@@ -139,6 +142,7 @@ Grid表格
 	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
 	dataTables http://datatables.net/
 
+grid layout library  https://github.com/desandro/masonry http://desandro.com/
 UI框架（github）
     semantic https://github.com/Semantic-Org/Semantic-UI
     flatUI https://github.com/designmodo/Flat-UI
@@ -171,6 +175,8 @@ kit
     cryptojs https://github.com/brix/crypto-js
     md5js https://github.com/blueimp/JavaScript-MD5
 
-AOP编程 meld
+AOP编程 meldjs  https://github.com/cujojs/meld
+
+测试 buster   http://docs.busterjs.org/en/latest/
 
 
