@@ -23,6 +23,8 @@ requirejs或seaJs的使用
 
 dom on ready与window.onload事件的使用
 
+ajax全部使用延迟对象deferred对象
+
 GC，闭包等或者插件中的状态变量在destroy的时候要=null释放引用
 
 jq插件的写法：
