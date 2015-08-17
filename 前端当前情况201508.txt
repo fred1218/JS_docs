@@ -30,9 +30,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 		Modernizr.js 为HTML5和CSS3而生,权威的解决方案[解决各种跨浏览器兼容性问题]
 		https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
 		http://modernizr.com/
-		
 		html5shiv  https://github.com/aFarkas/html5shiv
-		
 
 		polyfills 要ie8支持h5和canvas的方案,html5.js
 		http://www.ziliao1.com/Article/Show/7816A4595D1388E61F9BDF43581DD211.html
@@ -144,8 +142,7 @@ UI框架（github）
 	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
     Centurion https://github.com/justinhough/Centurion
-    
-    
+
 css：
     PureCss https://github.com/yahoo/pure
     foundation https://github.com/zurb/foundation
@@ -157,9 +154,7 @@ kit
 	muicss https://github.com/dcloudio/mui
 	material-ui https://github.com/callemall/material-ui
 	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
-		
-	
 
 
 前端加密md5加密等，一般用对等加密
-    网上插件
+    网上插件 cryptojs https://github.com/brix/crypto-js
