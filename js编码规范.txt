@@ -25,7 +25,7 @@ dom on ready与window.onload事件的使用
 
 ajax全部使用延迟对象deferred对象
 
-GC，闭包等或者插件中的状态变量在destroy的时候要=null释放引用
+GC
 
 jq插件的写法：
     数据model，配置setting，状态变量stateData
