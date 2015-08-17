@@ -21,6 +21,8 @@ requirejs或seaJs的使用
 
 图片多，用懒加载方式
 
+dom on ready与window.onload事件的使用
+
 GC，闭包等或者插件中的状态变量在destroy的时候要=null释放引用
 
 jq插件的写法：
