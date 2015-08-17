@@ -156,5 +156,6 @@ kit
 	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
 
 
-前端加密md5加密等，一般用对等加密
-    网上插件 cryptojs https://github.com/brix/crypto-js
+前端加密md5加密等, 网上插件
+    cryptojs https://github.com/brix/crypto-js
+    md5js https://github.com/blueimp/JavaScript-MD5
