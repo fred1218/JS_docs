@@ -1,0 +1,33 @@
+风格由IDE来统一
+=============================
+重点在编程细节上：
+命名，变量，函数
+
+for循环,退出循环(continue;break)
+
+try{}catch(){}finally{}
+
+基于数据驱动的应用开发，先定义数据模型，定义getter，setter方法等
+
+return影响的函数或变量声明提前
+
+闭包回调等高阶函数的使用
+
+函数柯里化定义service API
+
+requirejs或seaJs的使用
+
+模板使用
+
+图片多，用懒加载方式
+
+GC，闭包等或者插件中的状态变量在destroy的时候要=null释放引用
+
+jq插件的写法：
+    数据model，配置setting，状态变量stateData
+    destroy方法，init方法，update方法
+    插件事件使用命名空间，事件全部放在第一次加载插件的判断中
+
+
+
+
