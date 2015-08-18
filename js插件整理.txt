@@ -54,19 +54,30 @@ Grid表格
 	dataTables http://datatables.net/
 
 UI框架
+	framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试 F7-Plus https://github.com/sdc-fe/Framework7-Plus
+	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+	
     semantic https://github.com/Semantic-Org/Semantic-UI
     flatUI https://github.com/designmodo/Flat-UI
     amazeui https://github.com/allmobilize/amazeui
 	mui https://github.com/dcloudio/mui dcloud的h5移动端框架
     uikit https://github.com/uikit/uikit http://www.getuikit.net/
-    framework7 http://framework7.taobao.org/
-
-	想用F7但是碰到了安卓兼容性问题？试试 F7-Plus https://github.com/sdc-fe/Framework7-Plus
-	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+    
 
 	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
     Centurion https://github.com/justinhough/Centurion
+	
+响应式框架（material design 材质设计）
+	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
+	
+	muicss https://github.com/dcloudio/mui
+	material-ui https://github.com/callemall/material-ui	
+
+css：
+    PureCss https://github.com/yahoo/pure
+    foundation https://github.com/zurb/foundation
+	
 布局
     布局通常自己写，但是对于特殊布局还是有些要求
     grid-layout https://github.com/desandro/masonry  http://desandro.com/
@@ -74,17 +85,10 @@ UI框架
     freewall https://github.com/kombai/freewall
         Freewall is a cross-browser and responsive jQuery plugin to help you create many types of grid layouts: flexible layouts, images layouts, nested grid layouts, metro style layouts, pinterest like layouts ... with nice CSS3 animation effects and call back events. Freewall is all-in-one solution for creating dynamic grid layouts for desktop, mobile, and tablet...
 
-css：
-    PureCss https://github.com/yahoo/pure
-    foundation https://github.com/zurb/foundation
 kit
     jquerytools https://github.com/jquerytools/jquerytools/tree/v1.2.7
     jquery-ui https://github.com/jquery/jquery-ui
 
-响应式框架（material design 材质设计）
-	muicss https://github.com/dcloudio/mui
-	material-ui https://github.com/callemall/material-ui
-	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
 
 前端加密md5加密等, 网上插件
     cryptojs https://github.com/brix/crypto-js

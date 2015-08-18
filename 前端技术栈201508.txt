@@ -47,8 +47,9 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
          mobile-angular-ui https://github.com/mcasimir/mobile-angular-ui
         这两个是目前流行的js mvc（MVVM）框架，有数据绑定，依赖注入等特性，路由控制交由前端,还有vue.js,backbone和ember.js 等MVC框架
 		【D类需求】
-		jQueryMobile, sencha Touch,appjs等js框架
-		amazeUI semanticUI  frameWork UI 等
+		使用jQueryMobile, sencha Touch,appjs等js框架，amazeUI semanticUI等
+		
+		推荐：ionic（angular）  frameWork UI（jquery） 
 
         node开发
         node无视连接数量，适应于高并发项目，前后段都用js开发，数据层使用mongoDB，适用于微信上的那种可能面临高并发，数据库设计不是很严格的活动类项目。
@@ -99,6 +100,15 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
         canvas
         WebGL
         本地存储(onStorage事件)
+5.phoneGap开发
+	看重性能且功能少的话不要用框架或jQuery，最好cordova.js都不要加 (试过很多次，不加cordova.js和加cordova.js的性能是两个量级)。
+		ionic如果实在是喜欢他的样式或angular的话也可以用。虽然肯定比不用框架慢，但是ionic相对于纯cordova优势还是挺多的，有更多的功能，有社区，有文档，有好看的官网，开发的也挺活跃。
+		如果实在是觉得没有框架难受的话，可以试下Vue, Avalon这类稍微轻量点的MVVM框架，简单粗暴，而且对性能几乎没有影响。
+	熟悉AngularJS用 ionic ，熟悉jQuery用 framework7。不管用 jQuery 还是 ionic 。在注意代码质量的前提下，在 iOS 系统上都没有明显的卡顿现象。Android 上可以尽量减少动画效果，并且集成 crosswalk 来提升效果和性能。
+
+
+
+
 
 
 
