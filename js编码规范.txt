@@ -1,18 +1,95 @@
 风格由IDE来统一
     IDE的环境和文件的编码统一使用UTF-8
 =============================
-重点在编程细节上：
+基础编程细节：
+js文件中，方法或者各种service都要加上注释
 
 命名，变量，函数
+    命名的规范，一个var只声明一个变量。
+    // good
+    var hangModules = [];
+    var missModules = [];
+    var visited = {};
 
+    // bad
+    var hangModules = [],
+        missModules = [],
+        visited = {};
+    变量必须 即用即声明，不得在函数或其它形式的代码块起始位置统一声明所有变量。
+    // good
+    function kv2List(source) {
+        var list = [];
+        for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+                var item = {
+                    k: key,
+                    v: source[key]
+                };
+                list.push(item);
+            }
+        }
+        return list;
+    }
+    // bad
+    function kv2List(source) {
+        var list = [];
+        var key;
+        var item;
+        for (key in source) {
+            if (source.hasOwnProperty(key)) {
+                item = {
+                    k: key,
+                    v: source[key]
+                };
+                list.push(item);
+            }
+        }
+        return list;
+    }
     变量的上下文没有块级作用域，只有函数作用域。
-    不用可以把变量声明放在当前作用域(函数)顶部，在哪里用，在哪声明。
+    不用刻意把变量声明放在当前作用域(函数)顶部，在哪里用，在哪声明。
     js函数允许对同一变量多次声明，变量声明会提升，赋值不会提升，原var出现的位置就是赋值的位置。
 
-return影响的函数或变量声明提前
+    使用switch(){case}来代替多if...else判断
+    if else中的return，写成以下格式
+    var str;
+    if(xxx){
+        str=""
+    }else{
+    str=""
+    }
+    return str;
+    不要各自return。
 
 for循环,退出循环(continue;break)
     退出单个迭代用continue；退出整个循环用break
+    for(var i=0;i<xx.length;i++).for语句中后两步操作是每次迭代都会执行，对于total（xx.length）这种不变的，定义在外面
+    除去 Array.forEach(),还有while(){},for(xx in xxx)//不能用于数组的遍历,遍历对象时，还建议使用hasOwnProperty 过滤掉原型中的属性。
+        var newInfo = {};
+        for (var key in info) {
+            if (info.hasOwnProperty(key)) {
+                newInfo[key] = info[key];
+            }
+        }
+
+
+数字操作
+    Math.floor/Math.round/Math.ceil.
+    toFixed();
+    Number()/parseFloat()/parseInt()
+
+字符串操作
+    拼接字符串，推荐使用数组拼接[].join(' ')
+
+对象
+    不允许修改和扩展任何原生对象和宿主对象的原型。String.prototype/Array.prototype
+
+
+使用原生addEventListener注册事件的函数要写在外面，方便remove
+
+return影响的函数或变量声明提前
+
+
 
 异常处理
     业务逻辑稍多的时候，就需要自己根据需求抛出各种错误(js没有exception，只能throw new Error()或者throw errorMsg(string))
@@ -66,17 +143,21 @@ ajax全部使用延迟对象deferred对象
     var jqXhr=$.ajax();
     jqXhr.done(function(data){}).fail(function(){});
 
-
-高级方法：
-基于数据驱动的应用开发，先定义数据模型，定义getter，setter方法等
-GC
-闭包回调等高阶函数的使用
-函数柯里化定义service API
-
 jq插件的写法：
     数据model，配置setting，状态变量stateData
     destroy方法，init方法，update方法
     插件事件使用命名空间，事件全部放在第一次加载插件的判断中
+
+js编程的高级方法：
+基于数据驱动的应用开发，先定义数据模型，定义对象使用Object.create(),基于prototype扩展;
+闭包回调等高阶函数的使用,适用于模块化开发
+函数柯里化定义service API,用bind减少不必要的参数侵入，实现aop
+fn.caller可以获得调用此fn的函数的函数，arguments.callee返回函数本身
+
+工程化实现：
+构建打包 grunt/gulp/webpack
+
+
 
 
 
