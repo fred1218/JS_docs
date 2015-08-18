@@ -72,7 +72,6 @@ for循环,退出循环(continue;break)
             }
         }
 
-
 数字操作
     Math.floor/Math.round/Math.ceil.
     toFixed();
@@ -85,10 +84,10 @@ for循环,退出循环(continue;break)
     不允许修改和扩展任何原生对象和宿主对象的原型。String.prototype/Array.prototype
 
 
-使用原生addEventListener注册事件的函数要写在外面，方便remove
+使用原生addEventListener注册事件的函数要写在外面，方便remove.
 
-return影响的函数或变量声明提前
-
+事件流
+    当给子元素，父元素都注册了同类型的事件之后，需要给子元素加上ev.stopPropagation()组织冒泡
 
 
 异常处理
@@ -119,7 +118,7 @@ requirejs或seaJs的使用
     使用
         seaJS.use();
 
-模板使用
+模板使用,数据不复杂的直接数组拼接，复杂的数据拼接使用模板
 
 图片多，用懒加载方式
     <script>

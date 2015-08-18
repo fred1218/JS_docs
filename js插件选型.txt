@@ -1,0 +1,85 @@
+库
+jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/）
+
+表单插件 jquery.form.js 封装了ajax以及ajax提交form的方法，推荐php都要熟悉这个框架
+校验插件 jquery.validation.js
+全屏插件 swiper.js和fullpage.js
+轮播控件 swiper,superslide等
+上传插件 使用uploadify或者jquery.upload.js，自己封装
+所见所得ckeditor,ueditor
+markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
+图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）
+滚动监测加载插件 [自己写了个]
+异步加载js文件 head.js http://headjs.com/  https://github.com/headjs/headjs
+图片懒加载
+	lazysizes https://github.com/aFarkas/lazysizes
+日期控件
+	bootstrap-date-picker
+	myDate97
+	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
+
+select控件:
+	select2
+	http://select2.github.io/examples.html
+
+	sumoselect
+	http://hemantnegi.github.io/jquery.sumoselect/
+
+	还有简单封装的selectBox
+
+dialog:
+	artDialog
+	http://aui.github.io/artDialog/doc/index.html
+	http://aui.github.io/popupjs/test/bubble.html
+
+	web弹层组件 https://github.com/sentsin/layer  http://layer.layui.com
+
+	Popupjs
+	http://aui.github.io/popupjs/index.html
+	http://aui.github.io/popupjs/doc/selectbox.html
+
+滚动条
+	niceScroll  http://nicescroll.areaaperta.com/
+	iscroll  https://github.com/cubiq/iscroll/tree/master
+	custom scrollbar  https://github.com/malihu/malihu-custom-scrollbar-plugin
+
+Grid表格
+	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
+	dataTables http://datatables.net/
+
+grid layout library  https://github.com/desandro/masonry http://desandro.com/
+UI框架（github）
+    semantic https://github.com/Semantic-Org/Semantic-UI
+    flatUI https://github.com/designmodo/Flat-UI
+
+    amazeui https://github.com/allmobilize/amazeui
+	mui https://github.com/dcloudio/mui dcloud的h5移动端框架
+    uikit https://github.com/uikit/uikit http://www.getuikit.net/
+
+    framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试
+	F7-Plus https://github.com/sdc-fe/Framework7-Plus
+	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+
+	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
+    Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
+    Centurion https://github.com/justinhough/Centurion
+
+css：
+    PureCss https://github.com/yahoo/pure
+    foundation https://github.com/zurb/foundation
+kit
+    jquerytools https://github.com/jquerytools/jquerytools/tree/v1.2.7
+    jquery-ui https://github.com/jquery/jquery-ui
+
+响应式框架（material design 材质设计）
+	muicss https://github.com/dcloudio/mui
+	material-ui https://github.com/callemall/material-ui
+	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
+
+前端加密md5加密等, 网上插件
+    cryptojs https://github.com/brix/crypto-js
+    md5js https://github.com/blueimp/JavaScript-MD5
+
+AOP编程 meldjs  https://github.com/cujojs/meld
+
+测试 buster   http://docs.busterjs.org/en/latest/

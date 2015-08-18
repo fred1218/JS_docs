@@ -10,22 +10,22 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 =========================目前情况=====================
 1.当前pc端开发
         当前pc段开发都是针对于不同项目自己写组件和页面。没用到任何框架，暂时没用的必要。如要使用的话做类似于门户的网站，只建议使用bootstrap框架即可。
+        活动页，用前端统一的控件与css做开发
 
 2.当前移动端开发
-        有用到部分UI框架，比如amazeUI，framework7。需要解决的是各种移动端对应的css的坑。
+        移动端应用，有用到部分UI框架，比如amazeUI，framework7。需要解决的是各种移动端对应的css的坑。
 
-        移动端小游戏开发，当前都是操作dom，还是使用传统开发来做这种项目。若要发展和做的更好，必须去花时间搞canvas，这个要看需求情况和小游戏的复杂度。
+        移动端小游戏，当前都是操作dom，还是使用传统开发来做这种项目。若要发展和做的更好，必须搞canvas，这个要看需求情况和小游戏的复杂度。
 
 3.网上js库和jquery插件
           必需会用库jquery,zepto,underscore。【*****】
-          插件的选型和对比见下面
           建议php都把jquery API熟悉了，因为需要后台的地方，主流的还是jquery和原生js，为了方便还是用jquery较多，所以各种常见插件的api和jquery的API等细节都要关注。
-          需要特别了解的是了解js事件流【dom事件的注册与dom事件的委托】，这个对后端来说也很重要。
+          需要特别了解的是了解js事件流【dom事件的注册与dom事件的委托】
 
 4.开发方式
-          【A】类需求开发，暂时不用框架，大多使用插件即可，但是要用构建工具来压缩合并。
+          【A】类需求开发，暂时不用框架，大多使用插件即可，但是要用构建工具来构建打包。
           【B】类需求需用js框架，保持数据的统一控制
-          【C】类需求可能用到常用的小游戏框架开发，封装来canvas的等插件
+          【C】类需求可能用到常用的小游戏框架开发，封装来canvas的js插件
           【D】类webview，hybird类的开发可以用网上的移动开发框架，framework，amaze等
 		  
 5.针对ie8对canvas和css3和H5的兼容性解决方案
@@ -98,93 +98,8 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
         SVG
         canvas
         WebGL
-        本地存储
+        本地存储(onStorage事件)
 
-=========================页面插件选型=========================
-库
-jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/）
 
-表单插件 jquery.form.js 封装了ajax以及ajax提交form的方法，推荐php都要熟悉这个框架
-校验插件 jquery.validation.js
-全屏插件 swiper.js和fullpage.js
-轮播控件 swiper,superslide等
-上传插件 使用uploadify或者jquery.upload.js，自己封装
-所见所得ckeditor,ueditor
-markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
-图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）
-滚动监测加载插件 [自己写了个]
-异步加载js文件 head.js http://headjs.com/  https://github.com/headjs/headjs
-图片懒加载
-	lazysizes https://github.com/aFarkas/lazysizes
-日期控件
-	bootstrap-date-picker
-	myDate97
-	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
-
-select控件:
-	select2
-	http://select2.github.io/examples.html	
-	
-	sumoselect
-	http://hemantnegi.github.io/jquery.sumoselect/
-
-	还有简单封装的selectBox
-	
-dialog:  
-	artDialog
-	http://aui.github.io/artDialog/doc/index.html  
-	http://aui.github.io/popupjs/test/bubble.html
-	
-	web弹层组件 https://github.com/sentsin/layer  http://layer.layui.com
-
-	Popupjs
-	http://aui.github.io/popupjs/index.html
-	http://aui.github.io/popupjs/doc/selectbox.html
-
-滚动条
-	niceScroll  http://nicescroll.areaaperta.com/
-	iscroll  https://github.com/cubiq/iscroll/tree/master
-	custom scrollbar  https://github.com/malihu/malihu-custom-scrollbar-plugin
-
-Grid表格
-	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
-	dataTables http://datatables.net/
-
-grid layout library  https://github.com/desandro/masonry http://desandro.com/
-UI框架（github）
-    semantic https://github.com/Semantic-Org/Semantic-UI
-    flatUI https://github.com/designmodo/Flat-UI
-    
-    amazeui https://github.com/allmobilize/amazeui
-	mui https://github.com/dcloudio/mui dcloud的h5移动端框架
-    uikit https://github.com/uikit/uikit http://www.getuikit.net/
-    
-    framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试 
-	F7-Plus https://github.com/sdc-fe/Framework7-Plus
-	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
-	
-	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
-    Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
-    Centurion https://github.com/justinhough/Centurion
-
-css：
-    PureCss https://github.com/yahoo/pure
-    foundation https://github.com/zurb/foundation
-kit
-    jquerytools https://github.com/jquerytools/jquerytools/tree/v1.2.7
-    jquery-ui https://github.com/jquery/jquery-ui
-	
-响应式框架（material design 材质设计）
-	muicss https://github.com/dcloudio/mui
-	material-ui https://github.com/callemall/material-ui
-	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
-
-前端加密md5加密等, 网上插件
-    cryptojs https://github.com/brix/crypto-js
-    md5js https://github.com/blueimp/JavaScript-MD5
-
-AOP编程 meldjs  https://github.com/cujojs/meld
-
-测试 buster   http://docs.busterjs.org/en/latest/
 
 
