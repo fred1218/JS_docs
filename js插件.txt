@@ -1,3 +1,4 @@
+备注:简单的或者定制比较复杂的，奇怪的需求的可以自己造
 库
 jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/）
 
@@ -5,13 +6,15 @@ jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/
 校验插件 jquery.validation.js
 全屏插件 swiper.js和fullpage.js
 轮播控件 swiper,superslide等
-上传插件 使用uploadify或者jquery.upload.js，自己封装
+上传插件 使用uploadify或者jquery.upload.js，[需要再封装]
 所见所得ckeditor,ueditor
 markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
-图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）
-滚动监测加载插件 [自己写了个]
-异步加载js文件 head.js http://headjs.com/  https://github.com/headjs/headjs
-图片懒加载
+图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）[目前使用echarts]
+滚动监测加载插件 [轮子已造]
+异步加载js文件
+    head.js http://headjs.com/  https://github.com/headjs/headjs [该技术已被模块化开发代替]
+
+图片懒加载[图片懒加载，或者图片预加载]
 	lazysizes https://github.com/aFarkas/lazysizes
 日期控件
 	bootstrap-date-picker
@@ -19,7 +22,7 @@ markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
 	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
 
 select控件:
-	select2
+	select2[推荐]
 	http://select2.github.io/examples.html
 
 	sumoselect
@@ -28,7 +31,7 @@ select控件:
 	还有简单封装的selectBox
 
 dialog:
-	artDialog
+	artDialog[推荐]
 	http://aui.github.io/artDialog/doc/index.html
 	http://aui.github.io/popupjs/test/bubble.html
 
@@ -47,22 +50,26 @@ Grid表格
 	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
 	dataTables http://datatables.net/
 
-grid layout library  https://github.com/desandro/masonry http://desandro.com/
-UI框架（github）
+UI框架
     semantic https://github.com/Semantic-Org/Semantic-UI
     flatUI https://github.com/designmodo/Flat-UI
-
     amazeui https://github.com/allmobilize/amazeui
 	mui https://github.com/dcloudio/mui dcloud的h5移动端框架
     uikit https://github.com/uikit/uikit http://www.getuikit.net/
+    framework7 http://framework7.taobao.org/
 
-    framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试
-	F7-Plus https://github.com/sdc-fe/Framework7-Plus
+	想用F7但是碰到了安卓兼容性问题？试试 F7-Plus https://github.com/sdc-fe/Framework7-Plus
 	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
 
 	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
     Centurion https://github.com/justinhough/Centurion
+布局
+    布局通常自己写，但是对于特殊布局还是有些要求
+    grid-layout https://github.com/desandro/masonry  http://desandro.com/
+
+    freewall https://github.com/kombai/freewall
+        Freewall is a cross-browser and responsive jQuery plugin to help you create many types of grid layouts: flexible layouts, images layouts, nested grid layouts, metro style layouts, pinterest like layouts ... with nice CSS3 animation effects and call back events. Freewall is all-in-one solution for creating dynamic grid layouts for desktop, mobile, and tablet...
 
 css：
     PureCss https://github.com/yahoo/pure
