@@ -6,6 +6,8 @@
 命名，变量，函数
 
     变量的上下文没有块级作用域，只有函数作用域。
+    不用可以把变量声明放在当前作用域(函数)顶部，在哪里用，在哪声明。
+    js函数允许对同一变量多次声明，变量声明会提升，赋值不会提升，原var出现的位置就是赋值的位置。
 
 return影响的函数或变量声明提前
 
@@ -13,8 +15,8 @@ for循环,退出循环(continue;break)
     退出单个迭代用continue；退出整个循环用break
 
 异常处理
+    业务逻辑稍多的时候，就需要自己根据需求抛出各种错误(js没有exception，只能throw new Error()或者throw errorMsg(string))
     try{}catch(){}finally{}
-
 
 
 requirejs或seaJs的使用
@@ -43,6 +45,17 @@ requirejs或seaJs的使用
 模板使用
 
 图片多，用懒加载方式
+    <script>
+        var obj = new Image();
+        obj.onload = function()
+        {
+            $("img").attr('src',this.src);
+             alert(this.src);
+        }
+        obj.src = "http://XXX.jpg";
+    </script>
+    <div id="mypic"><img src="../images/loading.gif" /></div>
+
 
 dom on ready与window.onload事件的使用
     domReady表示document加载好之后就执行
