@@ -58,6 +58,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 2.前端工程化【ABCD类都需要】
         grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】http://www.zhihu.com/question/20342350 选型上选择异步加载思想的requireJS
+        新的systemJS https://github.com/systemjs/systemjs
         选择的理由：思想上，文档，打包r.js
         requireJS eg:
         use:
@@ -105,6 +106,12 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 		ionic如果实在是喜欢他的样式或angular的话也可以用。虽然肯定比不用框架慢，但是ionic相对于纯cordova优势还是挺多的，有更多的功能，有社区，有文档，有好看的官网，开发的也挺活跃。
 		如果实在是觉得没有框架难受的话，可以试下Vue, Avalon这类稍微轻量点的MVVM框架，简单粗暴，而且对性能几乎没有影响。
 	熟悉AngularJS用 ionic ，熟悉jQuery用 framework7。不管用 jQuery 还是 ionic 。在注意代码质量的前提下，在 iOS 系统上都没有明显的卡顿现象。Android 上可以尽量减少动画效果，并且集成 crosswalk 来提升效果和性能。
+
+6.框架和接口编程
+	AOP编程 meldjs  https://github.com/cujojs/meld
+
+7.前端开发
+	面向组件化开发
 
 
 

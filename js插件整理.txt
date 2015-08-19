@@ -94,6 +94,4 @@ kit
     cryptojs https://github.com/brix/crypto-js
     md5js https://github.com/blueimp/JavaScript-MD5
 
-AOP±‡≥Ã meldjs  https://github.com/cujojs/meld
-
 ≤‚ ‘ buster   http://docs.busterjs.org/en/latest/
