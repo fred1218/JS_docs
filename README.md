@@ -1,10 +1,13 @@
-# js_plugins_self
-my plugins
 
-# java东西
+## java东西
 https://github.com/thinkgem/jeesite
 
-#规范
+##集成解决方案
+http://div.io/digg/
+
+https://github.com/fouber/blog
+
+##规范
 
 https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md
 
