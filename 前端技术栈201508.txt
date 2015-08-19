@@ -56,6 +56,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
         对于即时类应用也可以用node开发
 
 2.前端工程化【ABCD类都需要】
+		前端集成解决方案 文档https://github.com/fouber/blog
         grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】http://www.zhihu.com/question/20342350 选型上选择异步加载思想的requireJS
         新的systemJS https://github.com/systemjs/systemjs
@@ -109,9 +110,13 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 
 6.框架和接口编程
 	AOP编程 meldjs  https://github.com/cujojs/meld
+	异步编程 q.js等
+	-----------------
+	研究gulp.js的源码深入了解异步
 
 7.前端开发
 	面向组件化开发
+	
 
 
 
