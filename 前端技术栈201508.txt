@@ -107,7 +107,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 		如果实在是觉得没有框架难受的话，可以试下Vue, Avalon这类稍微轻量点的MVVM框架，简单粗暴，而且对性能几乎没有影响。
 	熟悉AngularJS用 ionic ，熟悉jQuery用 framework7。不管用 jQuery 还是 ionic 。在注意代码质量的前提下，在 iOS 系统上都没有明显的卡顿现象。Android 上可以尽量减少动画效果，并且集成 crosswalk 来提升效果和性能。
 
-6.框架和接口编程
+6.框架和接口编程,异步编程promise,deferred
 	AOP编程 meldjs  https://github.com/cujojs/meld
 
 7.前端开发
