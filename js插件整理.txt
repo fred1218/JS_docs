@@ -18,7 +18,6 @@ markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
 	lazysizes https://github.com/aFarkas/lazysizes
 日期控件
 	bootstrap-date-picker
-	myDate97
 	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
 
 select控件:
@@ -62,7 +61,8 @@ UI框架
     amazeui https://github.com/allmobilize/amazeui
 	mui https://github.com/dcloudio/mui dcloud的h5移动端框架
     uikit https://github.com/uikit/uikit http://www.getuikit.net/
-    
+
+    jqueryUI
 
 	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
