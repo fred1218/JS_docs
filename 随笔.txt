@@ -1,0 +1,15 @@
+js的线程会阻塞浏览器的ui渲染线程
+
+script标签会阻塞浏览器的ui渲染线程，性能优化上，使用异步加载， 尽量减少script数目，使用模块化技术即可减少
+又可以复用，还不会造成变量全局污染requireJS systemJS。只发起一个js标签的请求，其余的依赖js通过文件流读取
+labJS是异步加载
+
+异步编程：磁盘读写和网络传数据传输耗时，可用异步来实现无阻塞
+promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise deferred，并且根据状态
+来响应io操作完成之后的事件，实现异步可以使用回调，使用延迟对象，使用promise
+
+gulp.js q.js
+
+面向切面编程aop。bind  $.proxy(obj.method,obj)或者
+
+匿名函数递归arguments.callee
