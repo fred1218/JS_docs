@@ -93,6 +93,9 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
          文件操作
          webwork
          地理位置
+		 
+		 FileAPI 和xhr l2
+		 https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#the-formdata-interface
 
         【特定应用，推送，实时应用】
         websocket
@@ -113,7 +116,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 	异步编程 q.js等
 	-----------------
 	研究gulp.js的源码深入了解异步
-
+	
 7.前端开发
 	面向组件化开发
 	
