@@ -21,7 +21,6 @@ jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/
 	FileAPI  https://github.com/mailru/FileAPI
 	jquery.fileapi  https://github.com/RubaXa/jquery.fileapi
 所见所得ckeditor,ueditor
-markdown编辑（这个可嵌入的比较少，还需要大量语法规则）
 图表报表选型hightchart，Chart.js，echarts（涉及地图可选用）[目前使用echarts]
 	graphael 基于raphael的图表  https://github.com/DmitryBaranovskiy/g.raphael   http://g.raphaeljs.com/
 	
@@ -128,3 +127,19 @@ kit
     md5js https://github.com/blueimp/JavaScript-MD5
 
 测试 buster   http://docs.busterjs.org/en/latest/
+
+MarkDown
+	将此技术应用在博客或是CMS平台上会非常实用，也可以作为公告系统或私信系统使用。
+    这种方式的缺点在于SEO方面：搜索引擎可能无法了解页面内容的格式，像本该着重的标题的可能只会被当做普通内容一并处理，甚至还可能认为此内容是乱打的（那么多多余的符号~）。
+markdown编辑 熟记md的语法规则
+markdown解析：
+markdown-js https://github.com/evilstreak/markdown-js
+Remarkable  https://github.com/jonschlinkert/remarkable
+markdown-here  http://markdown-here.com/  https://github.com/adam-p/markdown-here
+stackedit（In-browser markdown editor）   https://github.com/benweet/stackedit  https://stackedit.io/
+dillinger  https://github.com/joemccann/dillinger   http://dillinger.io/
+EpicEditor  https://github.com/OscarGodson/EpicEditor
+showdown  https://github.com/showdownjs/showdown
+laverna  https://github.com/Laverna/laverna 是个app
+remark  https://github.com/gnab/remark
+remarkable  https://github.com/jonschlinkert/remarkable
