@@ -41,7 +41,10 @@ jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/
 图片懒加载[图片懒加载，或者图片预加载]
 	lazysizes https://github.com/aFarkas/lazysizes
 日期控件
-	bootstrap-date-picker
+	bootstrap-date-picker1  返回的都是UTC时间 https://github.com/smalot/bootstrap-datetimepicker
+	bootstrap-date-picker2  https://github.com/Eonasdan/bootstrap-datetimepicker
+	bootstrap-daterangepicker  https://github.com/dangrossman/bootstrap-daterangepicker
+
 	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
 
 select控件:
