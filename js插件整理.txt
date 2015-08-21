@@ -15,7 +15,7 @@ jquery£¬zepto£¬underscore£¬sprint£¨like jquery  https://github.com/bendc/sprint/
 	resumable.js   https://github.com/23/resumable.js
 	
 	jquery-upload-progress  https://github.com/drogus/jquery-upload-progress
-	==============
+	====================================================================
 	FileApi and XHR L2
 	plupload   https://github.com/moxiecode/plupload
 	FileAPI  https://github.com/mailru/FileAPI
