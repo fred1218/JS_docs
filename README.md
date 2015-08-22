@@ -2,6 +2,9 @@
 ## java东西
 https://github.com/thinkgem/jeesite
 
+## spring一样的IOC框架
+Guice https://github.com/google/guice
+
 ##集成解决方案
 http://div.io/digg/
 
