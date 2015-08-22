@@ -13,3 +13,56 @@ promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise defer
 匿名函数递归arguments.callee
 
 源码研究 gulp.js q.js
+
+
+=============异步处理高并发的==============
+消息中间件技术选型
+JMS消息服务 MQ消息队列
+以下是JMS的实现
+ActiveMQ
+rabbitMQ
+zeroMQ
+
+===========服务器推送和即时应用相关=============
+以下技术跟上面的消息队列技术是并行的，上面是解决高并发的异步执行，此技术呢则是处理即时应用的，两个可以
+结合处理高并发即时应用（推送）业务
+
+即时通讯协议XMPP，其实4种，另三俩不使用，实现即时通讯效果的还有websocket，comet等，仅是实现效果，不是协议
+新的协议还有
+MQTT（有可能成为物联网的重要组成），还有coap协议
+
+
+ActiveMQ支持的消息协议有以下：
+AMQP协议：
+即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同开发语言等条件的限制。
+MQTT协议：
+MQTT（Message Queuing Telemetry Transport，消息队列遥测传输）是IBM开发的一个即时通讯协议，有可能成为物联网的重要组成部分。该协议支持所有平台，几乎可以把所有联网物品和外部连接起来，被用来当做传感器和致动器（比如通过Twitter让房屋联网）的通信协议。
+OpenWire协议：OpenWire协议在网上没有对应的介绍，似乎是activeMQ自己定义的一种协议，官方网站对其的介绍如下：
+OpenWire is our cross language Wire Protocol to allow native access to ActiveMQ from a number of different languages and platforms. The Java OpenWire transport is the default transport in ActiveMQ 4.x or later. For other languages see the following...
+stomp协议：STOMP，Streaming Text Orientated Message Protocol，是流文本定向消息协议，是一种为MOM(Message Oriented Middleware，面向消息的中间件)设计的简单文本协议。
+
+
+web端,Node端实现mqtt协议的模块是mosca   mqtt.js
+
+
+
+
+
+
+服务器推送就是即时通讯
+
+
+
+
+服务器推送技术(Server Push)：
+Ajax、反向 Ajax 和 WebSockets
+
+comet（反向ajax）：长连接和长轮询
+
+轮询使用的是ajax（定时发送ajax）
+
+Comet4J(Comet for Java)是一个纯粹基于AJAX(XMLHTTPRequest)的服务器推送框架，消息以JSON方式传递，具备长轮询、长连接、自动选择三种工作模式。
+pushlet是comet的一个框架
+
+comet和ajax区别
+ajax要客户端显示发送http请求，comet不需要

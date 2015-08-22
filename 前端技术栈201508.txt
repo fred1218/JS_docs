@@ -1,4 +1,4 @@
-说明：
+说明：针对ES5以及以下，用ES6，和还未规范标准化的ES7之后很多现在的实现都会out
 A类需求：pc端（特效较多，单向交互多），门户，移动端H5活动页面
 B类需求：单页应用[PC,移动端]，PC端后台管理系统等双向交互较多的系统【类似于前述的双向交互较多的需求】
 C类需求：移动端，微信平台H5游戏。【纯前端工作】
@@ -47,13 +47,14 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
          mobile-angular-ui https://github.com/mcasimir/mobile-angular-ui
         这两个是目前流行的js mvc（MVVM）框架，有数据绑定，依赖注入等特性，路由控制交由前端,还有vue.js,backbone和ember.js 等MVC框架
 		【D类需求】
-		使用jQueryMobile, sencha Touch,appjs等js框架，amazeUI semanticUI等
+		使用 sencha Touch,appjs等js框架，amazeUI semanticUI等
+		jQueryMobile不推荐了，据说坑多，data-定义属性不好控制
 		
 		推荐：ionic（angular）  frameWork UI（jquery） 
 
         node开发
         node无视连接数量，适应于高并发项目，前后段都用js开发，数据层使用mongoDB，适用于微信上的那种可能面临高并发，数据库设计不是很严格的活动类项目。
-        对于即时类应用也可以用node开发
+        对于即时类应用也可以用node开发.一般是小项目或者大项目的小模块
 
 2.前端工程化【ABCD类都需要】
 		前端集成解决方案 文档https://github.com/fouber/blog
@@ -119,6 +120,15 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 	
 7.前端开发
 	面向组件化开发
+8.开源md博客系统
+	hugo   https://github.com/spf13/hugo
+	gitblog  https://github.com/jockchou/gitblog【国产】
+	gitbook  https://www.gitbook.com/
+	
+9.babel  https://github.com/babel/babel
+		js的转换编译器
+	
+
 	
 
 
