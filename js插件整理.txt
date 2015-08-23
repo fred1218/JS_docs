@@ -40,6 +40,7 @@ jquery，zepto，underscore，sprint（like jquery  https://github.com/bendc/sprint/
 
 图片懒加载[图片懒加载，或者图片预加载]
 	lazysizes https://github.com/aFarkas/lazysizes
+	jquery_lazyload  https://github.com/tuupola/jquery_lazyload
 日期控件
 	bootstrap-date-picker1  返回的都是UTC时间 https://github.com/smalot/bootstrap-datetimepicker
 	bootstrap-date-picker2  https://github.com/Eonasdan/bootstrap-datetimepicker
