@@ -61,7 +61,9 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
         grunt/gulp+bower/webpack 自动化工具构建【压缩合并重命名】前端js/css，图片等资源优化等【*****】
         模块化开发(require.js_amd和seajs_cmd的选型)【****】http://www.zhihu.com/question/20342350 选型上选择异步加载思想的requireJS
         新的systemJS https://github.com/systemjs/systemjs
-        选择的理由：思想上，文档，打包r.js
+        选择的理由：思想上，文档，打包用
+		r.js
+		
         requireJS eg:
         use:
         require.config({});
