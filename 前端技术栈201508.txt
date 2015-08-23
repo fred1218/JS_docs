@@ -120,13 +120,14 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 	
 7.前端开发
 	面向组件化开发
+	
 8.开源md博客系统
 	hugo   https://github.com/spf13/hugo
 	gitblog  https://github.com/jockchou/gitblog【国产】
 	gitbook  https://www.gitbook.com/
 	
 9.babel  https://github.com/babel/babel
-		js的转换编译器
+		js的转换编译器(用es6和es7编写代码，引入babel来转换成es5来执行)
 	
 
 	
