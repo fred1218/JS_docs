@@ -83,8 +83,7 @@ Grid表格
 	gridster  http://gridster.net/#demos
 
 UI框架
-	framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试 F7-Plus https://github.com/sdc-fe/Framework7-Plus
-	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+	
 	
     semantic https://github.com/Semantic-Org/Semantic-UI
     flatUI https://github.com/designmodo/Flat-UI
@@ -98,11 +97,21 @@ UI框架
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
     Centurion https://github.com/justinhough/Centurion
 	
-响应式框架（material design 材质设计）
-	ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持
-	
+	（material框架（material design 材质设计）
 	muicss https://github.com/dcloudio/mui
 	material-ui https://github.com/callemall/material-ui	
+	
+H5APP框架
+	0.reactJS reactNative,relayJS////////////angular
+	1.ionic angularjs的移动端ui解决方案 https://github.com/driftyco/ionic ，ionic直接放弃了IOS6和Android4.1以下的版本支持，ionic采用 angularjs作 为其基础
+	2.PhoneGap(cordova)  PhoneGap是一套能让你使用HTML5轻松调用本地API接口和发布应用到商店的应用开发平台
+	PhoneGap是一款国外的开源移动开发平台。目前已经将核心代码贡献给Apache cordova，
+	Apache Cordova  is a platform for building native mobile applications using HTML, CSS and JavaScript
+	3.ChocolateChip-UI  build on jquery
+	4.framework7 http://framework7.taobao.org/ 想用F7但是碰到了安卓兼容性问题？试试 F7-Plus https://github.com/sdc-fe/Framework7-Plus
+	SUI-Mobile http://m.sui.taobao.org/components/  基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+	
+
 
 css：
     PureCss https://github.com/yahoo/pure
