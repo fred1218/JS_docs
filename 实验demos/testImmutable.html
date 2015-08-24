@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require.js"></script>
+</head>
+<body>
+<script>
+    console.clear();
+    console.log("a");
+    setTimeout(function () {
+        console.log("b");
+    }, 1000);
+    console.log("c");
+    setTimeout(function () {
+        console.log("d");
+    }, 0);
+    //a c d b
+    require(['immutable.min.js'], function (Immutable) {
+        var map1 = Immutable.Map({a: 1, b: 2, c: 3, d: 4});
+//        var map2 = Immutable.Map({c:10, a:20, t:30});
+//        var obj = {d:100, o:200, g:300};
+//        var map3 = map1.merge(map2, obj);
+//        var myObject = {a:1,b:2,c:3};
+        var myObject = {d: 5, a: 1, b: 2, c: 3};
+        var s = Immutable.Seq(myObject).toObject();
+        console.debug(s);
+
+        var islist = Immutable.Map.isMap(map1);
+        alert(islist);
+
+    })
+</script>
+</body>
+</html>

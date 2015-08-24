@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="underscore.js"></script>
+</head>
+<body>
+<div id="testTemplate"></div>
+<script type="text/template" id="temp1">
+   <div>
+       hello {{name}},I`m {{age}},father is {{parents.f}}
+   </div>
+</script>
+<script>
+    $(function () {
+        _.templateSettings = {
+            interpolate: /\{\{(.+?)\}\}/g
+        };
+        var mt = _.template($('#temp1').text());
+        var _co = mt({name: "zhangsan", age: 40, parents: {f: 'zhang1'}});
+        document.getElementById('testTemplate').innerHTML = _co;
+    })
+</script>
+</body>
+</html>

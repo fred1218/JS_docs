@@ -8,6 +8,14 @@ labJS是异步加载
 promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise deferred，并且根据状态
 来响应io操作完成之后的事件，实现异步可以使用回调，使用延迟对象，使用promise。
 
+
+解决并发的问题可用：多线程，异步。
+		多线程还得看机器是否支持多线程程序，还得考虑多线程访问共有资源
+		
+		apache是多线程的，Nginx和nodeJS都是单线程的，基于事件的，并且是异步的，
+
+
+
 面向切面编程aop。bind  $.proxy(obj.method,obj)或者
 
 匿名函数递归arguments.callee
