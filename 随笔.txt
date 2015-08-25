@@ -12,7 +12,7 @@ promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise defer
 解决并发的问题可用：多线程，异步。
 		多线程还得看机器是否支持多线程程序，还得考虑多线程访问共有资源
 		
-		apache是多线程的，Nginx和nodeJS都是单线程的，基于事件的，并且是异步的，
+		apache是多线程的，Nginx和nodeJS都是单线程的，基于事件的，并且是异步的，所以nginx在高并发性能更好，服务器压力更小
 
 
 
@@ -22,7 +22,7 @@ promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise defer
 
 源码研究 gulp.js q.js
 
-=============异步处理高并发的消息服务JMS==============
+=============异步处理高并发的消息服务==JMS==============
 消息中间件技术选型
 JMS消息服务 MQ消息队列
 以下是JMS的实现
@@ -52,9 +52,7 @@ stomp协议：STOMP，Streaming Text Orientated Message Protocol，是流文本定向消息协
 web端,Node端实现mqtt协议的模块是mosca   mqtt.js
 
 
-
 服务器推送就是即时通讯
-
 
 
 服务器推送技术(Server Push)：
