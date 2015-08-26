@@ -1,0 +1,1 @@
+seat.json和seat2.json是俩都依赖的显示座位json

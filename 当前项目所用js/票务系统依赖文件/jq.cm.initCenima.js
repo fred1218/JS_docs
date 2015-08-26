@@ -1,5 +1,5 @@
 /**
- * Ó°Ôº×ùÎ»³õÊ¼»¯util
+ * å½±é™¢åº§ä½åˆå§‹åŒ–util
  * @param method
  * @returns {*}
  */
@@ -24,7 +24,7 @@
             disable: "disabled",
             selected: "selected",
             lover: "love",
-            //Ñ¡Ôñ×ùÎ»Ö®ºó
+            //é€‰æ‹©åº§ä½ä¹‹å
             afterSelectSeat: null,
             afterDeselectSeat: null,
             afterPanelInited: null,
@@ -121,13 +121,13 @@
 
                         var rowId = seatData.rowId;
                         var columns = seatData.columns, len = columns.length;
-                        //len + 2,¼Ó2ÊÇÎªÁËÈÃÏÔÊ¾µÄÊı×ÖÀë×ùÎ»¼ä¾à´óµã
+                        //len + 2,åŠ 2æ˜¯ä¸ºäº†è®©æ˜¾ç¤ºçš„æ•°å­—ç¦»åº§ä½é—´è·å¤§ç‚¹
                         var chtml = "<p>";
                         chtml += '<span class="num">' + rowId + '</span>';
                         for (var i = 0; i < len; i++) {
                             var v = columns[i];
                             var columnId = v.columnId, seatNo = v.seatNo, seatType = v.st;
-                            var titleInfo = rowId + "ÅÅ" + columnId + "×ù";
+                            var titleInfo = rowId + "æ’" + columnId + "åº§";
                             switch (seatType) {
                                 case 'E':
                                     chtml += '<span class="seat"></span>';
@@ -239,7 +239,7 @@
                 return this.each(function () {
                     var $cont = $(this), opt = $cont.data("initCinema");
                     if (typeof opt !== 'undefined') {
-                        //Çå³ıÊÖÑ¡µÄ£¬»¹Ô­³õÊ¼×´Ì¬
+                        //æ¸…é™¤æ‰‹é€‰çš„ï¼Œè¿˜åŸåˆå§‹çŠ¶æ€
 
                     }
                 });
@@ -256,5 +256,3 @@
 
     };
 }));
-
-

@@ -1,0 +1,1190 @@
+{
+  "cols": 18,
+  "rows": 12,
+  "areas": [
+    {
+      "name": "area",
+      "begin": "1-2",
+      "end": "7-20",
+      "bgColor": "blue"
+    },
+    {
+      "name": "area",
+      "begin": "1-22",
+      "end": "15-29",
+      "bgColor": "green"
+    },
+    {
+      "name": "area",
+      "begin": "11-2",
+      "end": "14-14",
+      "bgColor": "orange"
+    }
+  ],
+  "screen": {
+    "position": 9,
+    "text": "屏幕中央"
+  },
+  "namingRules": {
+    "rowsNameRule": "number",
+    "columnsRule": {
+      "order": "LR",
+      "useEmpty": false,
+      "rule": "series"
+    }
+  },
+  "seats": [
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "1",
+      "rowNum": 1
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "2",
+      "rowNum": 2
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "LO"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "3",
+      "rowNum": 3
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "4",
+      "rowNum": 4
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "5",
+      "rowNum": 5
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "LK"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "LK"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "LK"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "6",
+      "rowNum": 6
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "",
+      "rowNum": 7
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "7",
+      "rowNum": 8
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "8",
+      "rowNum": 9
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "9",
+      "rowNum": 10
+    },
+    {
+      "columns": [
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        },
+        {
+          "columnId": "",
+          "seatNo": "",
+          "st": "E"
+        }
+      ],
+      "rowId": "10",
+      "rowNum": 11
+    },
+    {
+      "columns": [
+        {
+          "columnId": "18",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "17",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "16",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "15",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "14",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "13",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "12",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "11",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "10",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "09",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "08",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "07",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "06",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "05",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "04",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "03",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "02",
+          "seatNo": "",
+          "st": "N"
+        },
+        {
+          "columnId": "01",
+          "seatNo": "",
+          "st": "N"
+        }
+      ],
+      "rowId": "11",
+      "rowNum": 12
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cols": 18,
+  "rows": 12,
+  "areas": [
+    {
+      "code":"AXXNDHWU",
+      "name": "area",
+      "begin": "1-2",
+      "end": "5-5",
+      "bgColor": "blue",
+      "opacity": 0.8,
+      "memo": "备注1"
+    },
+    {
+      "code":"XXA1234d",
+      "name": "area",
+      "begin": "3-7",
+      "end": "4-11",
+      "bgColor": "green",
+      "memo": "备注2"
+    },
+    {
+      "code":"KLMNHJK",
+      "name": "area",
+      "begin": "7-7",
+      "end": "8-10",
+      "bgColor": "orange"
+    }
+  ],
+  "screen": {
+    "position": 9,
+    "text": "屏幕中央"
+  }
+
+}
