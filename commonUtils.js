@@ -1,23 +1,25 @@
 /**
- * ×Ö·ûÊı×éµÈ²Ù×÷ ajax(complete,beforeSend) loading dialog Ê±¼ä²Ù×÷ ÕıÔòÑéÖ¤
+ * å­—ç¬¦æ•°ç»„ç­‰æ“ä½œ ajax(complete,beforeSend) loading dialog æ—¶é—´æ“ä½œ æ­£åˆ™éªŒè¯
  * date array Math list map(immutable),loadsh&underscore,es5 API,reduce,string
- * Í¼Æ¬µÄlazyload
+ * å›¾ç‰‡çš„lazyload
  * window.location
  * window.open
  *
  * Created by guowei.dong on 2015/8/19.
  */
 define(['jquery', 'underscore'], function ($, _) {
-    function browser(){}
-    function log(){
+    function browser() {
+    }
+
+    function log() {
         console.debug();
     }
+
     function dateAbt() {
         var d = new Date;
-        var d2=new Date('2011-11-11 23:59:59');
-        console.debug(d2.toTimeString(),d2.toDateString(),d2.toLocaleString());//±¾Ê±Çø
-        console.debug(d2.toGMTString(),d2.toISOString(),d2.toUTCString());//¸ñÁÖÍşÖÎ£¬£¬Ğ­µ÷ÊÀ½çÊ±
-
+        var d2 = new Date('2011-11-11 23:59:59');
+        console.debug(d2.toTimeString(), d2.toDateString(), d2.toLocaleString());//æœ¬æ—¶åŒº
+        console.debug(d2.toGMTString(), d2.toISOString(), d2.toUTCString());//æ ¼æ—å¨æ²»ï¼Œï¼Œåè°ƒä¸–ç•Œæ—¶
         log(d.getFullYear(), 1);
         log(d.getMonth() + 1);
         log(d.getDate())
@@ -30,6 +32,9 @@ define(['jquery', 'underscore'], function ($, _) {
         document.write(d.toLocaleString())
         log(d.toLocaleTimeString());
     }
+
+    var imgLoad = function () {
+    };
 
 
 });
