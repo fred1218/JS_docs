@@ -8,6 +8,6 @@ require.config({
 });
 
 require(['common'], function (common) {
-    greeting();
+    common.greeting();
 
 });

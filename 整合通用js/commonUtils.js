@@ -7,13 +7,16 @@
  *
  * Created by guowei.dong on 2015/8/19.
  */
-define(['jquery-1.11.1.min', 'underscore'], function ($, _) {
+define(['jquery-1.11.1.min.js', 'underscore'], function ($, _) {
     //function browser() {
     //    alert('browser');
     //}
     var greeting = function () {
-        alert('greeting');
+        var testStr = "    hello  wrld";
+        alert(testStr);
     }
+    var methods = {};
+    methods.greeting = greeting;
 
     //function log() {
     //    console.debug();
@@ -40,5 +43,5 @@ define(['jquery-1.11.1.min', 'underscore'], function ($, _) {
     //var imgLoad = function () {
     //};
 
-
+    return methods;
 });

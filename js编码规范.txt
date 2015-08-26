@@ -95,7 +95,7 @@ for循环,退出循环(continue;break)
     try{}catch(){}finally{}
 
 
-requirejs或seaJs的使用
+requirejs或seaJs的使用【requireJS不支持中文目录，其它未测】
     异步模块定义 所有依赖全部拉取之后（依赖前置），才能使用
     定义
         define(id?,dep?,function(){
