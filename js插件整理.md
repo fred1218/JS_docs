@@ -11,6 +11,7 @@
 - 全屏插件 swiper.js和fullpage.js
 - 轮播控件 swiper,superslide等
 - 上传插件
+	> 
 	- 使用uploadify或者jquery.upload.js，[需要再封装]
 	- [jQuery-File-Upload](https://github.com/blueimp/jQuery-File-Upload) 
 	- [FineUploader](https://github.com/FineUploader/fine-uploader) 
@@ -30,10 +31,11 @@
 	- [graphael](https://github.com/DmitryBaranovskiy/g.raphael   http://g.raphaeljs.com/) **基于raphael的图表**  
 
 - 动画canvas，svg等库
+	> 
 	- [three.js ](https://github.com/mrdoob/three.js) 
 	- [raphael ](https://github.com/DmitryBaranovskiy/raphael/)
 	- [d3.js ](https://github.com/mbostock/d3) 
-	- [c3.js ](https://github.com/masayuki0812/c3   http://c3js.org/examples.html) 
+	- [c3.js ](https://github.com/masayuki0812/c3 )  [官网](http://c3js.org/examples.html) 
 
 - 菜单插件
 	- [Responsive-Menu ](https://github.com/mattkersley/Responsive-Menu)
@@ -44,13 +46,14 @@
     - [head.js ](https://github.com/headjs/headjs) [官网](http://headjs.com/)  *该技术已被模块化开发代替*
 
 - 图片懒加载(*图片懒加载，或者图片预加载*)
+	> 
 	- [lazysizes ](https://github.com/aFarkas/lazysizes)
 	- [jquery_lazyload  ](https://github.com/tuupola/jquery_lazyload)
 - 日期控件
+	> 
 	- [bootstrap-date-picker1]( https://github.com/smalot/bootstrap-datetimepicker)  **返回的都是UTC时间**
 	- [bootstrap-date-picker2 ](https://github.com/Eonasdan/bootstrap-datetimepicker) 
 	- [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker) **范围区间选择**  
-
 	- [laydate ](https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/)*国产*
 
 - select控件
@@ -58,22 +61,25 @@
   - [sumoselect](http://hemantnegi.github.io/jquery.sumoselect/)
 
 - dialog
-	- [artDialog](http://aui.github.io/artDialog/doc/index.html) **推荐**
-  [demo](http://aui.github.io/popupjs/test/bubble.html)
+	> 
+	- [artDialog](http://aui.github.io/artDialog/doc/index.html) **推荐** [demo](http://aui.github.io/popupjs/test/bubble.html)
+  
  - [bootstrap-modal ]( https://github.com/jschr/bootstrap-modal)	
  - [web弹层组件 ](https://github.com/sentsin/layer)	[官网](http://layer.layui.com)
- - [Popupjs](http://aui.github.io/popupjs/index.html)
- [demo](http://aui.github.io/popupjs/doc/selectbox.html)
+ - [Popupjs](http://aui.github.io/popupjs/index.html)  [demo](http://aui.github.io/popupjs/doc/selectbox.html)
+ 
 
 - 滚动条	
+  > 
   - [niceScroll  ](http://nicescroll.areaaperta.com/)
-  -[iscroll  ](https://github.com/cubiq/iscroll/tree/master)
-  -[custom scrollbar ](https://github.com/malihu/malihu-custom-scrollbar-plugin)
+  - [iscroll  ](https://github.com/cubiq/iscroll/tree/master)
+  - [custom scrollbar ](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
 	
 
 
 - Grid表格
+	> 
 	- [jqGrid ](http://www.trirand.com/blog/)   [demo](http://www.trirand.com/blog/?page_id=5)
 	- [dataTables ](http://datatables.net/)
 	- [backgrid  ](https://github.com/wyuenho/backgrid) [demo](http://backgridjs.com/#basic-example  )
@@ -82,6 +88,7 @@
 	- [gridster  ](http://gridster.net/#demos)
 
 - UI框架
+    > 
     - [semantic](https://github.com/Semantic-Org/Semantic-UI) 
     - [flatUI](https://github.com/designmodo/Flat-UI)
     - [amazeui](https://github.com/allmobilize/amazeui) 
@@ -114,11 +121,13 @@
 ```
 
 - css：
+    > 
     - [PureCss](https://github.com/yahoo/pure) 
     - [foundation](https://github.com/zurb/foundation) 
 
 - 布局
     布局通常自己写，但是对于特殊布局还是有些要求
+    > 
     - [grid-layout](https://github.com/desandro/masonry)   [demo](http://desandro.com/)
 	- [Nested](https://github.com/suprb/Nested)  
 	- [masonry](https://github.com/desandro/masonry) 
@@ -139,7 +148,8 @@ with nice CSS3 animation effects and call back events. Freewall is all-in-one so
 
 - 测试 [buster](http://docs.busterjs.org/en/latest/)   
 
->MarkDown
+####MarkDown
+
 ```
 将此技术应用在博客或是CMS平台上会非常实用，也可以作为公告系统或私信系统使用。
 这种方式的缺点在于SEO方面：搜索引擎可能无法了解页面内容的格式，像本该着重的标题的可能只会被当做普通内容一并处理，甚至还可能认为此内容是乱打的（那么多多余的符号~）。
@@ -147,6 +157,7 @@ with nice CSS3 animation effects and call back events. Freewall is all-in-one so
 	
 
 - markdown解析(**markdown编辑 熟记md的语法规则**)：
+	> 
 	- [markdown-js](https://github.com/evilstreak/markdown-js) 
 	- [Remarkable](https://github.com/jonschlinkert/remarkable)  
 	- [markdown-here](https://github.com/adam-p/markdown-here) [官网](http://markdown-here.com/)    
