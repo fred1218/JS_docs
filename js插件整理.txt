@@ -1,81 +1,82 @@
-±¸×¢:¼òµ¥µÄ»òÕß¶¨ÖÆ±È½Ï¸´ÔÓµÄ£¬Ææ¹ÖµÄĞèÇóµÄ¿ÉÒÔ×Ô¼ºÔì
-¿â
-jquery£¬zepto£¬underscore£¬sprint£¨like jquery  https://github.com/bendc/sprint/£©
+å¤‡æ³¨:ç®€å•çš„æˆ–è€…å®šåˆ¶æ¯”è¾ƒå¤æ‚çš„ï¼Œå¥‡æ€ªçš„éœ€æ±‚çš„å¯ä»¥è‡ªå·±é€ 
+åº“
+jqueryï¼Œzeptoï¼Œunderscoreï¼Œsprintï¼ˆlike jquery  https://github.com/bendc/sprint/ï¼‰
 
-±íµ¥²å¼ş jquery.form.js ·â×°ÁËajaxÒÔ¼°ajaxÌá½»formµÄ·½·¨£¬ÍÆ¼öphp¶¼ÒªÊìÏ¤Õâ¸ö¿ò¼Ü
-Ğ£Ñé²å¼ş jquery.validation.js
-È«ÆÁ²å¼ş swiper.jsºÍfullpage.js
-ÂÖ²¥¿Ø¼ş swiper,superslideµÈ
-ÉÏ´«²å¼ş 
-	Ê¹ÓÃuploadify»òÕßjquery.upload.js£¬[ĞèÒªÔÙ·â×°]
+placeholder  jquery-placeholder https://github.com/mathiasbynens/jquery-placeholder
+è¡¨å•æ’ä»¶ jquery.form.js å°è£…äº†ajaxä»¥åŠajaxæäº¤formçš„æ–¹æ³•ï¼Œæ¨èphpéƒ½è¦ç†Ÿæ‚‰è¿™ä¸ªæ¡†æ¶
+æ ¡éªŒæ’ä»¶ jquery.validation.js
+å…¨å±æ’ä»¶ swiper.jså’Œfullpage.js
+è½®æ’­æ§ä»¶ swiper,superslideç­‰
+ä¸Šä¼ æ’ä»¶
+	ä½¿ç”¨uploadifyæˆ–è€…jquery.upload.jsï¼Œ[éœ€è¦å†å°è£…]
 	jQuery-File-Upload https://github.com/blueimp/jQuery-File-Upload
 	FineUploader https://github.com/FineUploader/fine-uploader
-	¸Ä±à×Ôuploadify Huploadify https://github.com/Double-Lv/Huploadify
+	æ”¹ç¼–è‡ªuploadify Huploadify https://github.com/Double-Lv/Huploadify
 	Simple-Ajax-Uploader  https://github.com/LPology/Simple-Ajax-Uploader
 	resumable.js   https://github.com/23/resumable.js
-	
+
 	jquery-upload-progress  https://github.com/drogus/jquery-upload-progress
 	====================================================================
 	FileApi and XHR L2
 	plupload   https://github.com/moxiecode/plupload
 	FileAPI  https://github.com/mailru/FileAPI
 	jquery.fileapi  https://github.com/RubaXa/jquery.fileapi
-Ëù¼ûËùµÃckeditor,ueditor
-Í¼±í±¨±íÑ¡ĞÍhightchart£¬Chart.js£¬echarts£¨Éæ¼°µØÍ¼¿ÉÑ¡ÓÃ£©[Ä¿Ç°Ê¹ÓÃecharts]
-	graphael »ùÓÚraphaelµÄÍ¼±í  https://github.com/DmitryBaranovskiy/g.raphael   http://g.raphaeljs.com/
-	
-¶¯»­canvas£¬svgµÈ¿â
+æ‰€è§æ‰€å¾—ckeditor,ueditor
+å›¾è¡¨æŠ¥è¡¨é€‰å‹hightchartï¼ŒChart.jsï¼Œechartsï¼ˆæ¶‰åŠåœ°å›¾å¯é€‰ç”¨ï¼‰[ç›®å‰ä½¿ç”¨echarts]
+	graphael åŸºäºraphaelçš„å›¾è¡¨  https://github.com/DmitryBaranovskiy/g.raphael   http://g.raphaeljs.com/
+
+åŠ¨ç”»canvasï¼Œsvgç­‰åº“
 	three.js  https://github.com/mrdoob/three.js
 	raphael https://github.com/DmitryBaranovskiy/raphael/
 	d3.js  https://github.com/mbostock/d3
 	c3.js  https://github.com/masayuki0812/c3   http://c3js.org/examples.html
-	
-²Ëµ¥²å¼ş
+
+èœå•æ’ä»¶
 	Responsive-Menu https://github.com/mattkersley/Responsive-Menu
 
 
-¹ö¶¯¼à²â¼ÓÔØ²å¼ş [ÂÖ×ÓÒÑÔì]
-Òì²½¼ÓÔØjsÎÄ¼ş
-    head.js http://headjs.com/  https://github.com/headjs/headjs [¸Ã¼¼ÊõÒÑ±»Ä£¿é»¯¿ª·¢´úÌæ]
+æ»šåŠ¨ç›‘æµ‹åŠ è½½æ’ä»¶ [è½®å­å·²é€ ]
+å¼‚æ­¥åŠ è½½jsæ–‡ä»¶
+    head.js http://headjs.com/  https://github.com/headjs/headjs [è¯¥æŠ€æœ¯å·²è¢«æ¨¡å—åŒ–å¼€å‘ä»£æ›¿]
 
-Í¼Æ¬ÀÁ¼ÓÔØ[Í¼Æ¬ÀÁ¼ÓÔØ£¬»òÕßÍ¼Æ¬Ô¤¼ÓÔØ]
+å›¾ç‰‡æ‡’åŠ è½½[å›¾ç‰‡æ‡’åŠ è½½ï¼Œæˆ–è€…å›¾ç‰‡é¢„åŠ è½½]
 	lazysizes https://github.com/aFarkas/lazysizes
 	jquery_lazyload  https://github.com/tuupola/jquery_lazyload
-ÈÕÆÚ¿Ø¼ş
-	bootstrap-date-picker1  ·µ»ØµÄ¶¼ÊÇUTCÊ±¼ä https://github.com/smalot/bootstrap-datetimepicker
+æ—¥æœŸæ§ä»¶
+	bootstrap-date-picker1  è¿”å›çš„éƒ½æ˜¯UTCæ—¶é—´ https://github.com/smalot/bootstrap-datetimepicker
 	bootstrap-date-picker2  https://github.com/Eonasdan/bootstrap-datetimepicker
 	bootstrap-daterangepicker  https://github.com/dangrossman/bootstrap-daterangepicker
 
 	laydate https://github.com/sentsin/laydate  http://sentsin.com/layui/laydate/
 
-select¿Ø¼ş:
-	select2[ÍÆ¼ö]
+selectæ§ä»¶:
+	select2[æ¨è]
 	http://select2.github.io/examples.html
 
 	sumoselect
 	http://hemantnegi.github.io/jquery.sumoselect/
 
-	»¹ÓĞ¼òµ¥·â×°µÄselectBox
+	è¿˜æœ‰ç®€å•å°è£…çš„selectBox
 
 dialog:
-	artDialog[ÍÆ¼ö]
+	artDialog[æ¨è]
 	http://aui.github.io/artDialog/doc/index.html
 	http://aui.github.io/popupjs/test/bubble.html
 
 	bootstrap-modal  https://github.com/jschr/bootstrap-modal
 
-	webµ¯²ã×é¼ş https://github.com/sentsin/layer  http://layer.layui.com
+	webå¼¹å±‚ç»„ä»¶ https://github.com/sentsin/layer  http://layer.layui.com
 
 	Popupjs
 	http://aui.github.io/popupjs/index.html
 	http://aui.github.io/popupjs/doc/selectbox.html
 
-¹ö¶¯Ìõ
+æ»šåŠ¨æ¡
 	niceScroll  http://nicescroll.areaaperta.com/
 	iscroll  https://github.com/cubiq/iscroll/tree/master
 	custom scrollbar  https://github.com/malihu/malihu-custom-scrollbar-plugin
 
-Grid±í¸ñ
+Gridè¡¨æ ¼
 	jqGrid http://www.trirand.com/blog/   http://www.trirand.com/blog/?page_id=5
 	dataTables http://datatables.net/
 	backgrid  http://backgridjs.com/#basic-example  https://github.com/wyuenho/backgrid
@@ -83,11 +84,11 @@ Grid±í¸ñ
 	handsontable  https://github.com/handsontable/handsontable  http://handsontable.com/examples.html#fndtn-basic
 	gridster  http://gridster.net/#demos
 
-UI¿ò¼Ü
+UIæ¡†æ¶
     semantic https://github.com/Semantic-Org/Semantic-UI
     flatUI https://github.com/designmodo/Flat-UI
     amazeui https://github.com/allmobilize/amazeui
-	mui https://github.com/dcloudio/mui dcloudµÄh5ÒÆ¶¯¶Ë¿ò¼Ü
+	mui https://github.com/dcloudio/mui dcloudçš„h5ç§»åŠ¨ç«¯æ¡†æ¶
     uikit https://github.com/uikit/uikit http://www.getuikit.net/
 
     jquery-ui https://github.com/jquery/jquery-ui
@@ -95,33 +96,33 @@ UI¿ò¼Ü
 	bootstrap https://github.com/twbs/bootstrap/tree/v3.3.5
     Swagger UI https://github.com/swagger-api/swagger-ui http://swagger.io/
     Centurion https://github.com/justinhough/Centurion
-	
-	£¨material¿ò¼Ü£¨material design ²ÄÖÊÉè¼Æ£©
+
+	ï¼ˆmaterialæ¡†æ¶ï¼ˆmaterial design æè´¨è®¾è®¡ï¼‰
 	muicss https://github.com/dcloudio/mui
-	material-ui https://github.com/callemall/material-ui	
-	
-H5APP¿ò¼Ü
+	material-ui https://github.com/callemall/material-ui
+
+H5APPæ¡†æ¶
 	0.reactJS reactNative,relayJS////////////angular
-	1.ionic angularjsµÄÒÆ¶¯¶Ëui½â¾ö·½°¸ https://github.com/driftyco/ionic £¬ionicÖ±½Ó·ÅÆúÁËIOS6ºÍAndroid4.1ÒÔÏÂµÄ°æ±¾Ö§³Ö£¬ionic²ÉÓÃ angularjs×÷ ÎªÆä»ù´¡
-	2.PhoneGap(cordova)  PhoneGapÊÇÒ»Ì×ÄÜÈÃÄãÊ¹ÓÃHTML5ÇáËÉµ÷ÓÃ±¾µØAPI½Ó¿ÚºÍ·¢²¼Ó¦ÓÃµ½ÉÌµêµÄÓ¦ÓÃ¿ª·¢Æ½Ì¨
-	PhoneGapÊÇÒ»¿î¹úÍâµÄ¿ªÔ´ÒÆ¶¯¿ª·¢Æ½Ì¨¡£Ä¿Ç°ÒÑ¾­½«ºËĞÄ´úÂë¹±Ï×¸øApache cordova£¬
+	1.ionic angularjsçš„ç§»åŠ¨ç«¯uiè§£å†³æ–¹æ¡ˆ https://github.com/driftyco/ionic ï¼Œionicç›´æ¥æ”¾å¼ƒäº†IOS6å’ŒAndroid4.1ä»¥ä¸‹çš„ç‰ˆæœ¬æ”¯æŒï¼Œionicé‡‡ç”¨ angularjsä½œ ä¸ºå…¶åŸºç¡€
+	2.PhoneGap(cordova)  PhoneGapæ˜¯ä¸€å¥—èƒ½è®©ä½ ä½¿ç”¨HTML5è½»æ¾è°ƒç”¨æœ¬åœ°APIæ¥å£å’Œå‘å¸ƒåº”ç”¨åˆ°å•†åº—çš„åº”ç”¨å¼€å‘å¹³å°
+	PhoneGapæ˜¯ä¸€æ¬¾å›½å¤–çš„å¼€æºç§»åŠ¨å¼€å‘å¹³å°ã€‚ç›®å‰å·²ç»å°†æ ¸å¿ƒä»£ç è´¡çŒ®ç»™Apache cordovaï¼Œ
 	Apache Cordova  is a platform for building native mobile applications using HTML, CSS and JavaScript
 	3.ChocolateChip-UI  build on jquery
-	4.framework7 http://framework7.taobao.org/ ÏëÓÃF7µ«ÊÇÅöµ½ÁË°²×¿¼æÈİĞÔÎÊÌâ£¿ÊÔÊÔ F7-Plus https://github.com/sdc-fe/Framework7-Plus
-	SUI-Mobile http://m.sui.taobao.org/components/  »ùÓÚF7¿ª·¢µÄ£¬ÇáÁ¿ÇÒ¼æÈİËùÓĞÖ÷Á÷°²×¿Éè±¸µÄ MSUI
-	
+	4.framework7 http://framework7.taobao.org/ æƒ³ç”¨F7ä½†æ˜¯ç¢°åˆ°äº†å®‰å“å…¼å®¹æ€§é—®é¢˜ï¼Ÿè¯•è¯• F7-Plus https://github.com/sdc-fe/Framework7-Plus
+	SUI-Mobile http://m.sui.taobao.org/components/  åŸºäºF7å¼€å‘çš„ï¼Œè½»é‡ä¸”å…¼å®¹æ‰€æœ‰ä¸»æµå®‰å“è®¾å¤‡çš„ MSUI
 
 
-css£º
+
+cssï¼š
     PureCss https://github.com/yahoo/pure
     foundation https://github.com/zurb/foundation
-	
-²¼¾Ö
-    ²¼¾ÖÍ¨³£×Ô¼ºĞ´£¬µ«ÊÇ¶ÔÓÚÌØÊâ²¼¾Ö»¹ÊÇÓĞĞ©ÒªÇó
+
+å¸ƒå±€
+    å¸ƒå±€é€šå¸¸è‡ªå·±å†™ï¼Œä½†æ˜¯å¯¹äºç‰¹æ®Šå¸ƒå±€è¿˜æ˜¯æœ‰äº›è¦æ±‚
     grid-layout https://github.com/desandro/masonry  http://desandro.com/
-	
+
 	Nested  https://github.com/suprb/Nested
-	
+
 	masonry  https://github.com/desandro/masonry
 
     freewall https://github.com/kombai/freewall
@@ -130,24 +131,24 @@ css£º
 kit
     jquerytools https://github.com/jquerytools/jquerytools/tree/v1.2.7
 
-Ç°¶Ë¼ÓÃÜmd5¼ÓÃÜµÈ, ÍøÉÏ²å¼ş
+å‰ç«¯åŠ å¯†md5åŠ å¯†ç­‰, ç½‘ä¸Šæ’ä»¶
     cryptojs https://github.com/brix/crypto-js
     md5js https://github.com/blueimp/JavaScript-MD5
 
-²âÊÔ buster   http://docs.busterjs.org/en/latest/
+æµ‹è¯• buster   http://docs.busterjs.org/en/latest/
 
 MarkDown
-	½«´Ë¼¼ÊõÓ¦ÓÃÔÚ²©¿Í»òÊÇCMSÆ½Ì¨ÉÏ»á·Ç³£ÊµÓÃ£¬Ò²¿ÉÒÔ×÷Îª¹«¸æÏµÍ³»òË½ĞÅÏµÍ³Ê¹ÓÃ¡£
-    ÕâÖÖ·½Ê½µÄÈ±µãÔÚÓÚSEO·½Ãæ£ºËÑË÷ÒıÇæ¿ÉÄÜÎŞ·¨ÁË½âÒ³ÃæÄÚÈİµÄ¸ñÊ½£¬Ïñ±¾¸Ã×ÅÖØµÄ±êÌâµÄ¿ÉÄÜÖ»»á±»µ±×öÆÕÍ¨ÄÚÈİÒ»²¢´¦Àí£¬ÉõÖÁ»¹¿ÉÄÜÈÏÎª´ËÄÚÈİÊÇÂÒ´òµÄ£¨ÄÇÃ´¶à¶àÓàµÄ·ûºÅ~£©¡£
-markdown±à¼­ Êì¼ÇmdµÄÓï·¨¹æÔò
-markdown½âÎö£º
+	å°†æ­¤æŠ€æœ¯åº”ç”¨åœ¨åšå®¢æˆ–æ˜¯CMSå¹³å°ä¸Šä¼šéå¸¸å®ç”¨ï¼Œä¹Ÿå¯ä»¥ä½œä¸ºå…¬å‘Šç³»ç»Ÿæˆ–ç§ä¿¡ç³»ç»Ÿä½¿ç”¨ã€‚
+    è¿™ç§æ–¹å¼çš„ç¼ºç‚¹åœ¨äºSEOæ–¹é¢ï¼šæœç´¢å¼•æ“å¯èƒ½æ— æ³•äº†è§£é¡µé¢å†…å®¹çš„æ ¼å¼ï¼Œåƒæœ¬è¯¥ç€é‡çš„æ ‡é¢˜çš„å¯èƒ½åªä¼šè¢«å½“åšæ™®é€šå†…å®¹ä¸€å¹¶å¤„ç†ï¼Œç”šè‡³è¿˜å¯èƒ½è®¤ä¸ºæ­¤å†…å®¹æ˜¯ä¹±æ‰“çš„ï¼ˆé‚£ä¹ˆå¤šå¤šä½™çš„ç¬¦å·~ï¼‰ã€‚
+markdownç¼–è¾‘ ç†Ÿè®°mdçš„è¯­æ³•è§„åˆ™
+markdownè§£æï¼š
 	markdown-js https://github.com/evilstreak/markdown-js
 	Remarkable  https://github.com/jonschlinkert/remarkable
 	markdown-here  http://markdown-here.com/  https://github.com/adam-p/markdown-here
-	stackedit£¨In-browser markdown editor£©   https://github.com/benweet/stackedit  https://stackedit.io/
+	stackeditï¼ˆIn-browser markdown editorï¼‰   https://github.com/benweet/stackedit  https://stackedit.io/
 	dillinger  https://github.com/joemccann/dillinger   http://dillinger.io/
 	EpicEditor  https://github.com/OscarGodson/EpicEditor
 	showdown  https://github.com/showdownjs/showdown
-	laverna  https://github.com/Laverna/laverna ÊÇ¸öapp
+	laverna  https://github.com/Laverna/laverna æ˜¯ä¸ªapp
 	remark  https://github.com/gnab/remark
 	remarkable  https://github.com/jonschlinkert/remarkable
