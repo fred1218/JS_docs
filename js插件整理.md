@@ -99,16 +99,19 @@
 - H5APP框架
 	- [reactJS]() **reactNative,relayJS,angular**
 	- [ionic]( https://github.com/driftyco/ionic)
- ```angularjs的移动端ui解决方案 ，ionic直接放弃了IOS6和Android4.1以下的版本支持，ionic采用 angularjs作 为其基础```
-- [PhoneGap(cordova)]()
-  ``` PhoneGap是一套能让你使用HTML5轻松调用本地API接口和发布应用到商店的应用开发平台  ```
-  ```PhoneGap是一款国外的开源移动开发平台。目前已经将核心代码贡献给Apache cordova，  ```
-  ```Apache Cordova  is a platform for building native mobile applications using HTML, CSS and JavaScript```
-	
-	- ChocolateChip-UI  build on jquery
-	- [framework7](http://framework7.taobao.org/)  想用F7但是碰到了安卓兼容性问题？试试 [F7-Plus](https://github.com/sdc-fe/Framework7-Plus) 
-	[SUI-Mobile](http://m.sui.taobao.org/components/) 基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
+ ```
+ angularjs的移动端ui解决方案 ，ionic直接放弃了IOS6和Android4.1以下的版本支持，ionic采用 angularjs
+ ```
+    - [PhoneGap(cordova)]()
+    - ChocolateChip-UI  build on jquery
+    - [framework7](http://framework7.taobao.org/)  想用F7但是碰到了安卓兼容性问题？试试 [F7-Plus](https://github.com/sdc-fe/Framework7-Plus) 
+    - [SUI-Mobile](http://m.sui.taobao.org/components/) 基于F7开发的，轻量且兼容所有主流安卓设备的 MSUI
 
+```
+ PhoneGap是一套能让你使用HTML5轻松调用本地API接口和发布应用到商店的应用开发平台  
+ PhoneGap是一款国外的开源移动开发平台。目前已经将核心代码贡献给Apache cordova
+ Apache Cordova  is a platform for building native mobile applications using HTML, CSS and JavaScript
+```
 
 - css：
     - [PureCss](https://github.com/yahoo/pure) 
@@ -120,11 +123,12 @@
 	- [Nested](https://github.com/suprb/Nested)  
 	- [masonry](https://github.com/desandro/masonry) 
     - [freewall](https://github.com/kombai/freewall)
-        ```
-        Freewall is a cross-browser and responsive jQuery plugin to help you create many types of grid layouts:
-         flexible layouts, images layouts, nested grid layouts, metro style layouts, pinterest like layouts ...
-          with nice CSS3 animation effects and call back events. Freewall is all-in-one solution for creating dynamic grid layouts for desktop, mobile, and tablet...
-          ```
+    
+```
+Freewall is a cross-browser and responsive jQuery plugin to help you create many types of grid layouts:
+flexible layouts, images layouts, nested grid layouts, metro style layouts, pinterest like layouts ...
+with nice CSS3 animation effects and call back events. Freewall is all-in-one solution for creating dynamic grid layouts for desktop, mobile, and tablet...
+```
 
 - kit
     - [jquerytools](https://github.com/jquerytools/jquerytools/tree/v1.2.7) 
