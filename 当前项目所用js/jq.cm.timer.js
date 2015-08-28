@@ -1,5 +1,5 @@
 /**
- * ¼ÆÊ±Æ÷util,ÒÀÀµÓÚmoment.js
+ * è®¡æ—¶å™¨util,ä¾èµ–äºŽmoment.js
  * @param method
  * @returns {*}
  */
@@ -13,14 +13,15 @@
 }(function ($, moment) {
     $.fn.cmtimerUtil = function (method) {
         var setting = {
-            beginTime: null,//×Ô¼ºÐ´µÄ¿ªÊ¼¼ÆÊ±ÈÕÆÚ
-            serverTime: null,//ºóÌ¨´©À´µÄµ±Ç°²ÎÕÕÈÕÆÚÖµd_now
-            totalTime: 1500, //206150;20Ð¡Ê±61¸ö·ÖÖÓ50ÃëµÄÊ±¼ä¼ÆÊ±
-            passby: 1000, //Ã¿1000ºÁÃë¶¨Ê±Ò»´Î
-            delay: 0,//ÑÓ³Ù
+            convert: true,
+            beginTime: null,//è‡ªå·±å†™çš„å¼€å§‹è®¡æ—¶æ—¥æœŸ
+            serverTime: null,//åŽå°ç©¿æ¥çš„å½“å‰å‚ç…§æ—¥æœŸå€¼d_now
+            totalTime: 1500, //206150;20å°æ—¶61ä¸ªåˆ†é’Ÿ50ç§’çš„æ—¶é—´è®¡æ—¶
+            passby: 1000, //æ¯1000æ¯«ç§’å®šæ—¶ä¸€æ¬¡
+            delay: 0,//å»¶è¿Ÿ
             onInit: null,
-            onTimeFlies: null,//¼ÆÊ±¹ý³Ì
-            onEnd: null//¼ÆÊ±½áÊø
+            onTimeFlies: null,//è®¡æ—¶è¿‡ç¨‹
+            onEnd: null//è®¡æ—¶ç»“æŸ
         };
         var methods = {
             init: function (option) {
@@ -43,35 +44,33 @@
                     if (!d_begin.isAfter(d_now)) {
                         if (opt.delay > 0) {
                             var pt = convertStr2seconds(Math.abs(opt.delay));
-                            //¿ªÊ¼Ê±¼äÍÆ³Ù
+                            //å¼€å§‹æ—¶é—´æŽ¨è¿Ÿ
                             d_begin.add(pt, 's');
                         }
                         var n_b_diff = d_now.diff(d_begin);
-                        var total_secs = convertStr2seconds(opt.totalTime);
+                        var total_secs = opt.convert ? convertStr2seconds(opt.totalTime) : opt.totalTime;
                         if (n_b_diff >= 0) {
                             var n_b_diff_seconds = n_b_diff / 1000;
-                            //beginµ½nowµÄÊ±¼ä²î¼õÈ¥ÐèÒª´Óbegin¿ªÊ¼¼ÆÊ±µÄÊ±¼ä²î,²»Ð¡ÓÚ0µÄ»°£¬ËµÃ÷¼ÆÊ±ÒÑ¾­¹ýÁË£¬Ð¡ÓÚ0£¬±íÊ¾»¹ÐèÒª¼ÆÊ±¡£
+                            //beginåˆ°nowçš„æ—¶é—´å·®å‡åŽ»éœ€è¦ä»Žbeginå¼€å§‹è®¡æ—¶çš„æ—¶é—´å·®,ä¸å°äºŽ0çš„è¯ï¼Œè¯´æ˜Žè®¡æ—¶å·²ç»è¿‡äº†ï¼Œå°äºŽ0ï¼Œè¡¨ç¤ºè¿˜éœ€è¦è®¡æ—¶ã€‚
                             var _diff = n_b_diff_seconds - total_secs;
 
                             if (_diff >= 0) {
                                 if (opt.onEnd && $.isFunction(opt.onEnd)) {
-                                    opt.onEnd.call($cont);//¼ÆÊ±ÒÑ½áÊø
+                                    opt.onEnd.call($cont);//è®¡æ—¶å·²ç»“æŸ
                                 }
                             } else {
-                                beginTimer.call($cont, -_diff);//¼ÆÊ±Ê£ÓàµÄÊ±¼ä
+                                beginTimer.call($cont, -_diff);//è®¡æ—¶å‰©ä½™çš„æ—¶é—´
                             }
 
                         } else {
-                            //¿ªÊ¼¼ÆÊ±Ê±¼ä»¹Ã»µ½(Óëµ±Ç°Ê±¼ä±È)
+                            //å¼€å§‹è®¡æ—¶æ—¶é—´è¿˜æ²¡åˆ°(ä¸Žå½“å‰æ—¶é—´æ¯”)
                             delayToStart.call($cont, Math.abs(n_b_diff), total_secs);
                         }
                     } else {
                         if (opt.onEnd && $.isFunction(opt.onEnd)) {
-                            opt.onEnd.call($cont);//¼ÆÊ±ÒÑ½áÊø
+                            opt.onEnd.call($cont);//è®¡æ—¶å·²ç»“æŸ
                         }
                     }
-
-
                 });
 
             },
@@ -92,7 +91,7 @@
         function convertStr2seconds(totalTime) {
             var _t = String(totalTime), len = _t.length, total_secs = 0;
             if (len > 8) {
-                console.error('too long,timer walks off the job,´óÓÚ8Î»ÊýÎÒ²»¼ÆÊ±(×î´óµ½Á½Î»ÊýÌì) ');
+                console.error('too long,timer walks off the job,å¤§äºŽ8ä½æ•°æˆ‘ä¸è®¡æ—¶(æœ€å¤§åˆ°ä¸¤ä½æ•°å¤©) ');
             } else {
                 _t = String(100000000 + totalTime);
                 var mins = parseInt(_t.substr(-4, 2));
@@ -116,11 +115,11 @@
         }
 
         /**
-         * ¼ÆÊ±Æ÷´ò¿ª
+         * è®¡æ—¶å™¨æ‰“å¼€
          * @param total_secs
          */
         function beginTimer(total_secs) {
-            console.log("×Ü¼ÆÊ±¿ªÊ¼(seconds)£º" + total_secs);
+            console.log("æ€»è®¡æ—¶å¼€å§‹(seconds)ï¼š" + total_secs);
             var $cont = $(this), opt = $cont.data("cmtimerUtil"), _timer = $cont.data("cmtimerutil_timer");
             if (_timer) {
                 clearInterval(_timer);
@@ -135,7 +134,7 @@
                     }
                 } else {
                     if (opt.onTimeFlies && $.isFunction(opt.onTimeFlies)) {
-                        //»Øµ÷º¯Êýµ±ÖÐÓÐ¸ö²ÎÊý£¬ÊÇµ±Ç°Ê£ÓàµÄÊ±¼ä
+                        //å›žè°ƒå‡½æ•°å½“ä¸­æœ‰ä¸ªå‚æ•°ï¼Œæ˜¯å½“å‰å‰©ä½™çš„æ—¶é—´
                         opt.onTimeFlies.call($cont, formatTime(total_secs));
                     }
 
@@ -145,7 +144,7 @@
         }
 
         /**
-         * ½«Ê±¼ä×ªÎªÐ¡Ê±·ÖºÍÃë
+         * å°†æ—¶é—´è½¬ä¸ºå°æ—¶åˆ†å’Œç§’
          * @param c
          * @returns {{}}
          */
@@ -153,9 +152,9 @@
             var obj = {};
             obj.days = parseInt(c / (3600 * 24));
             obj.hours = parseInt((c % (3600 * 24)) / 3600);
-            // Ð¡Ê±Êý
+            // å°æ—¶æ•°
             obj.mins = parseInt(c / 60);
-            // ·ÖÖÓÊý
+            // åˆ†é’Ÿæ•°
             if (obj.mins >= 60) {
                 obj.mins = obj.mins % 60;
             }
