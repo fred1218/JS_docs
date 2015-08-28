@@ -13,7 +13,7 @@
 }(function ($, moment) {
     $.fn.cmtimerUtil = function (method) {
         var setting = {
-            convert: true,
+            convert: true,//如果不转化，将以秒计时，totalTime都当成秒
             beginTime: null,//自己写的开始计时日期
             serverTime: null,//后台穿来的当前参照日期值d_now
             totalTime: 1500, //206150;20小时61个分钟50秒的时间计时
