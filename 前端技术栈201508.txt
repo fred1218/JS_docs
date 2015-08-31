@@ -50,7 +50,7 @@ D类需求：Hybrid应用开发，纯H5的App应用【单向交互较多的需�
 		使用 sencha Touch,appjs等js框架，amazeUI semanticUI等
 		jQueryMobile不推荐了，据说坑多，data-定义属性不好控制
 		
-		推荐：ionic（angular）  frameWork UI（jquery） 
+		推荐：ionic（angular）  frameWork UI（jquery） backbone(underscore,jquery)
 
         node开发
         node无视连接数量，适应于高并发项目，前后段都用js开发，数据层使用mongoDB，适用于微信上的那种可能面临高并发，数据库设计不是很严格的活动类项目。
