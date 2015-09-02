@@ -1,13 +1,21 @@
 js的线程会阻塞浏览器的ui渲染线程
 
+-- 异步加载
 script标签会阻塞浏览器的ui渲染线程，性能优化上，使用异步加载， 尽量减少script数目，使用模块化技术即可减少
 又可以复用，还不会造成变量全局污染requireJS systemJS。只发起一个js标签的请求，其余的依赖js通过文件流读取
 labJS是异步加载
 
+异步是种处理机制
+======================
 异步编程：磁盘读写和网络传数据传输耗时，可用异步来实现无阻塞
+
+
 promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise deferred，并且根据状态
 来响应io操作完成之后的事件，实现异步可以使用回调，使用延迟对象，使用promise。
 
+实现异步的方式通常有callback,promise(以及jq封装的promise：$.Deferred),以及ES6的promise/A+，以及generator实现
+
+常用的库Q-.js
 
 解决并发的问题可用：多线程，异步。
 		多线程还得看机器是否支持多线程程序，还得考虑多线程访问共有资源
@@ -15,11 +23,25 @@ promise deferred 发起某个io操作或者延迟操作的时候，不必等待，可使用promise defer
 		apache是多线程的，Nginx和nodeJS都是单线程的，基于事件的，并且是异步的，所以nginx在高并发性能更好，服务器压力更小
 
 
+========================
+面向切面编程aop。melodjs
+对接口重写，调用的接口就会统一实现
+原接口A.say();
+var tmp=A.say;
+A.say=function(){
+aop的方法
+...
+tmp.apply(this,arguments);
+}
 
-面向切面编程aop。bind  $.proxy(obj.method,obj)或者
+==========================================
 
-匿名函数递归arguments.callee
+bind  $.proxy(obj.method,obj)或者apply,call可以改变函数的作用域，也就是this指向
 
+===============================
+
+匿名函数递归arguments.callee,调用函数的获取arguments.caller
+====================================
 源码研究 gulp.js q.js
 
 =============异步处理高并发的消息服务==JMS==============
