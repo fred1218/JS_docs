@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+
+	<body>
+		<div id="testhammer" style="width:100%;height:400px;background:red"></div>
+		<script src="hammer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var d = document.getElementById("testhammer");
+			var md = new Hammer(d);
+			md.get('swipe').set({
+				direction: Hammer.DIRECTION_ALL
+			});
+			md.on('swipeleft', function(ev) {
+				d.innerHTML = JSON.stringify(ev)
+			});
+			md.on('swiperight', function(ev) {
+				d.innerHTML = JSON.stringify(ev)
+			});
+			md.on('swipeup', function() {
+				d.innerHTML = "swipeup";
+			});
+			md.on('swipedown', function() {
+				d.innerHTML = "swipedown";
+			});
+		</script>
+
+	</body>
+
+</html>

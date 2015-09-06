@@ -1,0 +1,22 @@
+{
+  "name": "ngdemo1",
+  "version": "1.0.0",
+  "description": "framework",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"http-server -p8080 -otrue"
+  },
+  "keywords": [
+    "just",
+    "test"
+  ],
+  "author": "fred",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  }
+}

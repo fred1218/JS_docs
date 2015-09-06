@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+
+	<body>
+		<div id="testhammer" style="width:100%;height:400px;background:red"></div>
+		<script src="hammer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var d = document.getElementById("testhammer");
+			var md = new Hammer(d);
+			md.get('pinch').set({
+				enable: true
+			});
+			
+			md.on('pinchstart',function(){
+				d.innerHTML="pinchstart";
+			});
+			md.on('pinchend',function(){
+				d.innerHTML="pinchend";
+			});
+			md.on('pinchmove',function(){
+				d.innerHTML="pinchmove";
+			});
+			md.on('pinchin',function(){
+				d.innerHTML="pinchin";
+			});
+			md.on('pinchout',function(){
+				d.innerHTML="pinchout";
+			});
+			md.on('pinchcancel',function(){
+				d.innerHTML="pinchcancel";
+			});
+		</script>
+
+	</body>
+
+</html>
