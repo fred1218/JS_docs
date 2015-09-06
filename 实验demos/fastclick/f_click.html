@@ -4,21 +4,35 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	</head>
 
 	<body>
-	//ҳ��û��meta=device-width��ʱ��ֱ�ӷ��ƶ�����ȥ�˻��¼���ʹ��
-		<div id="aaa" style="width: 100%;height: 800px;background: red;"></div>
-		<script src="lib/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<div id="aaa" style="width: 100%;height: 400px;background: red;"></div>
+		<button class="fastclick" onclick="someHandler();">Fast click</button>
+		<button onclick="someHandler()">Slow click</button>
+		<script src="fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script type='text/javascript'>
+			var button = document.querySelector(".fastclick");
+			new FastClick(button);
+			var i = 0;
 
+			function someHandler() {
+				document.getElementById("aaa").innerHTML = i++;
+			}
+		</script>
+		<!--
+	作者：526470285@qq.com
+	时间：2015-09-06
+	描述：与上面分开的例子
+		-->
 		<script type="text/javascript">
 			window.addEventListener('load', function(e) {
-				FastClick.attach(document.body);
+				FastClick.attach(document.body); //将所有元素托管给fastclick.向下寻找子元素重新注册的，若这种方式，document.getElementById("aaa")须是子元素，比如是body的子元素
 			})
-			var i = 0;
+			var j = 0;
 			document.getElementById("aaa").onclick = function() {
-				this.innerHTML = i++;
+				this.innerHTML = j++;
 			}
 		</script>
 	</body>
