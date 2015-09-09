@@ -5,7 +5,7 @@
  * 3.左右按钮在盒子dom外面
  */
 ;
-(function () {
+(function (factory) {
     if (typeof define === "function" && define.amd) {
         define(['jquery'], factory);
     } else {
