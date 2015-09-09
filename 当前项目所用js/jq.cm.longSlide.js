@@ -606,11 +606,11 @@
 
                         $cont.data("longlunbo", opt);
                     }
-                    //else {
-                    //    $.extend(opt, option);
+                    else {
+                        $.extend(opt, option);
                     //    _timer = $cont.data("_llb_timer");
                     //    clearInterval(_timer);
-                    //}
+                    }
 
                 });
             }
