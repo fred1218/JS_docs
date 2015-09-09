@@ -257,6 +257,7 @@
                             $cont.data('exchangeData', exchangeData);
                         }
 
+                        //TODO 数据已被清空???
                         function getStateVals(which) {
                             var exchangeData = $cont.data('exchangeData');
                             return exchangeData[which];
