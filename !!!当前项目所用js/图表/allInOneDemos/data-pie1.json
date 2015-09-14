@@ -1,0 +1,14 @@
+{
+  "renderType": "pie",
+  "dataStore":[
+    [
+      {"value":335, "name":"module1"},
+      {"value":310, "name":"module2"},
+      {"value":234, "name":"module3"},
+      {"value":135, "name":"module4"},
+      {"value":1548, "name":"module5"}
+    ]
+  ]
+
+
+}
