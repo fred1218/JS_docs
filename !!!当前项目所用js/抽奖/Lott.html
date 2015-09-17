@@ -20,7 +20,7 @@
 	</head>
 
 	<body>
-		<button id="start" class="btn">开始</button>
+		<button id="start" class="btn">开始[6]</button>
 		<button id="pause">pause</button>
 		<button id="pause1">pause1秒</button>
 		<button id="continue">continue</button>
@@ -42,9 +42,8 @@
 			var lt = new Lott(".btn", ".lottery-unit", "#lottery");
 			lt.init({
 				onEndding: function() {
-					alert('什么鬼');
 				},
-				prizeInfo:3
+				prizeInfo:6
 			});
 			$('#pause').on('click', function() {
 				lt.pause()
