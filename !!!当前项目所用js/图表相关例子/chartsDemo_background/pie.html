@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/echarts-all.js"></script>
+    <script src="../js/cmutils.js"></script>
+    <title>pie</title>
+</head>
+<body>
+<div id="main" style="height:500px;border:1px solid #ccc;padding:10px;width: 800px"></div>
+</body>
+<script type="text/javascript">
+    var myopt = {
+        timeline: false,
+        options: {
+            backgroundColor: "#ebeaef",
+            title: {
+                'text': '饼图测试',//主标题
+                'subtext': '数据来自FBI123',//副标题
+                x: 'left'
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',//横竖，默认是横，y默认top
+                x: 'right', y: 'center',
+                feature: {
+                    magicType: {
+                        show: false
+                    },
+                    saveAsImage: {show: true}
+                }
+            },
+            legend: {
+                orient: "horizontal",//'horizontal' | 'vertical'
+                x: 'center',//图标的标题位置，在x轴和y轴
+                y: 'top'
+            }
+        }
+    };
+    var mc = new cmutils.CMCharts("#main", myopt);
+    mc.drawChart({
+        type: 'pie',
+        url: "data-pie2.json"
+    }, function (data) {
+    });
+
+</script>
+</html>

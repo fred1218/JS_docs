@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/echarts-all.js"></script>
-    <script src="../js/cmutils_old.js"></script>
+    <script src="../js/cmutils.js"></script>
     <title>axis</title>
 </head>
 <body>
-<div id="main" style="height:500px;border:1px solid #ccc;padding:10px;width: 800px"></div>
+<div id="main" style="height:500px;border:1px solid #ccc;padding:10px;width: 360px;"></div>
 
 </body>
 <script type="text/javascript">
     var myopt = {
         timeline:false,
         options: {
-            renderAsImage:false,
+            renderAsImage:true,
             tooltip: {
                 axisPointer: {
                     show: true,
@@ -32,7 +32,7 @@
                 x: 'center',//图标的标题位置，在x轴和y轴
                 y: 'top'
             },
-            xAxis: {'name': '', 'type': 'category'},
+            xAxis: [{'name': '', 'type': 'category'}],
             yAxis: [{'name': '', 'type': 'value'}]
         }
     };
@@ -44,4 +44,5 @@
 //        console.debug(data);
     });
 </script>
+<script src="fetchImg.js"></script>
 </html>

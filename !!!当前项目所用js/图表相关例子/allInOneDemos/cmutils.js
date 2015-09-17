@@ -160,7 +160,12 @@ var cmutils = cmutils || {};
             return that.mychart;
         }
     }
-
+    /**
+     *
+     * @param setting
+     * @param data
+     * @param returnCall
+     */
     function drawAxis(setting, data, returnCall) {
         var _arr = [],
             returnObj = null,
@@ -217,10 +222,7 @@ var cmutils = cmutils || {};
                         }
                     } //功能配置
                 },
-                grid: {
-                    'y': 50,
-                    'y2': 50, x2: 15, x: 50
-                }, //直角坐标系内绘图网格,决定图标占多大空间
+                grid: setting.grid, //直角坐标系内绘图网格,决定图标占多大空间
                 dataZoom: {
                     //backgroundColor:"blue",
                     //dataBackgroundColor:"red",
@@ -234,7 +236,7 @@ var cmutils = cmutils || {};
                     realtime: true,
                     handleSize: 10
                 },
-                xAxis: {
+                xAxis: [{
                     'type': 'category', //'category'会带data组合 | 'value' | 'time' | 'log'
                     //'max': 500,//x轴最大值
                     //axisTick:true,
@@ -246,7 +248,7 @@ var cmutils = cmutils || {};
                     splitLine: {
                         show: true
                     }, //显示图标网格
-                }, //x,图类没有轴显示
+                }], //x,图类没有轴显示
                 yAxis: [{
                     'type': 'value',
                     //'name': 'GDP（亿元）',//轴名称
@@ -278,47 +280,8 @@ var cmutils = cmutils || {};
             returnCall(data, axisSetting.options);
         }
         returnObj = data;
-        var useType = setting.type, usingArea = false;
-        if (setting.type == "area") {
-            useType = "line";
-            usingArea = true;
-        }
-        $.each(returnObj.dataStore[0].itemData, function (i, v) {
-            var _obj = {
-                name: returnObj.dataStore[0].key[i],
-                type: useType,
-                data: v,
-                yAxisIndex: 0,
-                smooth: true,
-                //itemStyle:{normal: {areaStyle: {type: 'default'}}},
-                //itemStyle: {
-                //    normal: {
-                //        barBorderColor: 'rgba(0,0,0,0)',
-                //        color: 'rgba(0,0,0,0)'
-                //    },
-                //    emphasis: {
-                //        barBorderColor: 'green',
-                //        color: 'green'
-                //    }
-                //},//柱形
 
-                //markPoint: {
-                //    data: [
-                //        {type: 'max', name: '最大值'},
-                //        {type: 'min', name: '最小值'}
-                //    ]
-                //},//在图上标注
-                //markLine: {
-                //    data: [
-                //        {type: 'average', name: '平均值'}
-                //    ]
-                //}
-            };
-            if (usingArea) {
-                $.extend(_obj, {itemStyle: {normal: {areaStyle: {type: 'default'}}}});
-            }
-            _arr.push(_obj);
-        });
+        var robj = convertDataToSeries(returnObj, setting);
         var insOpt = {};
         if (this.hasTimeLine) {
             insOpt = $.extend(true, {}, opt, axisSetting);
@@ -331,13 +294,9 @@ var cmutils = cmutils || {};
                             }
                         }
                     },
-                    legend: {
-                        data: returnObj.dataStore[0].key
-                    },
-                    xAxis: {
-                        data: returnObj.dataStore[0].itemKey
-                    },
-                    series: _arr
+                    legend: {data: robj.legenddata},
+                    xAxis: [{data: robj.xAxisdata}],
+                    series: robj.arrs
                 }
             };
             $.extend(true, insOpt, this.useropt);
@@ -351,13 +310,9 @@ var cmutils = cmutils || {};
                         }
                     }
                 },
-                legend: {
-                    data: returnObj.dataStore[0].key
-                },
-                xAxis: {
-                    data: returnObj.dataStore[0].itemKey
-                },
-                series: _arr
+                legend: {data: robj.legenddata},
+                xAxis: [{data: robj.xAxisdata}],
+                series: robj.arrs
             };
             $.extend(true, insOpt, this.useropt.options);
         }
@@ -428,39 +383,7 @@ var cmutils = cmutils || {};
             returnCall(data['dataStore'][0], pieSetting.options);
         }
         returnObj = data;
-        _arr.push({
-            name: '数据来源',
-            type: 'pie',
-            radius: setting.radius ? setting.radius : '50%', //可以直接写string，表示半径，也可以用数组，之差表示半径['50%', '70%']
-            //selectedMode: 'single',//single,multiple
-            center: setting.position ? setting.position : ['50%', '45%'], //圆心所在的位置,left,top
-            itemStyle: {
-                normal: {
-                    label: {
-                        //position: 'inner'
-                        textStyle: {
-                            fontSize: 12
-                        },
-                        formatter: "{b}\n{c}({d}%)"
-                    },
-                    labelLine: {
-                        show: true
-                    }
-                },
-//					emphasis: {
-//						label: {
-//							position: 'center',
-//							show: true,
-//							textStyle: {
-//								fontSize: '24',
-//								fontWeight: 'bold'
-//							},
-//							formatter: "{b}\n{d}%"
-//						}
-//					}
-            },
-            data: returnObj.dataStore[0]
-        });
+        var robj = convertDataToSeries(returnObj, setting);
         var titleArr = [];
         $.each(returnObj.dataStore[0], function (i, v) {
             titleArr.push(v.name);
@@ -474,7 +397,7 @@ var cmutils = cmutils || {};
                     legend: {
                         data: titleArr
                     },
-                    series: _arr
+                    series: robj.arrs
                     /**
                      * 正常情况下，饼图不是嵌套的，相当于柱状里面的一条，但柱状图大部分都是N个柱子对比，
                      *所以饼图里面同一半径相当于一个柱子，
@@ -488,9 +411,23 @@ var cmutils = cmutils || {};
             insOpt = $.extend(true, {}, opt.options, pieSetting.options);
             newopt = {
                 legend: {
-                    data: titleArr
+                    data: titleArr,
+                    formatter: function (obj) {
+                        var sum = 0;
+                        for (var jj = 0; jj < titleArr.length; jj++) {
+                            sum += parseFloat(returnObj.dataStore[0][jj].value, 10);
+                        }
+                        var idx = -1;
+                        for (var j = 0; j < titleArr.length; j++) {
+                            if (obj == titleArr[j]) {
+                                idx = j;
+                                break;
+                            }
+                        }
+                        return obj + (setting.label.showLabelPercent ? "(" + ( (returnObj.dataStore[0][idx].value / sum) * 100).toFixed(2) + "%)" : "");
+                    }
                 },
-                series: _arr
+                series: robj.arrs
             };
             $.extend(true, insOpt, this.useropt.options);
         }
@@ -626,10 +563,25 @@ var cmutils = cmutils || {};
                 var rt = data.renderType;
                 switch (rt) {
                     case 'axis':
-                        drawAxis.call(that, setting, data, returnCall);
+                        var defaultSetting = {
+                            usingArea: false, axisLabel: {show: false, usePercent: false}, grid: {
+                                'y': 50,
+                                'y2': 50, x2: 15, x: 50
+                            }, otherYaxis: {type: "line", useLegend: true}
+                        };
+                        $.extend(true, defaultSetting, setting);
+                        drawAxis.call(that, defaultSetting, data, returnCall);
                         break;
                     case 'pie':
-                        drawPie.call(that, setting, data, returnCall);
+                        var defaultSettings = {
+                            radius: '50%',
+                            position: ['50%', '45%'],
+                            label: {
+                                show: true, showLabelPercent: false
+                            }
+                        };
+                        $.extend(true, defaultSettings, setting);
+                        drawPie.call(that, defaultSettings, data, returnCall);
                         break;
                     case 'map':
                         drawMap.call(that, setting, data, returnCall);
@@ -645,14 +597,20 @@ var cmutils = cmutils || {};
         return this;
     }
     cmutils.CMCharts.prototype.redrawChart = function (setting) {
-        this.ajaxFetch(setting).done(function (dataStore) {
-            dataStore = convertDataByType(this.type);
-            this.mychart.setSeries();
-            this.mychart.hideLoading();
+        var that = this;
+        that.ajaxFetch(setting).done(function (dataStore) {
+
+            var robj = convertDataToSeries(dataStore, setting);
+            that.mychart.setOption({
+                legend: {data: robj.legenddata},
+                xAxis: [{data: robj.xAxisdata}],
+                series: robj.arrs
+            });
+            that.mychart.hideLoading();
         }).fail(function () {
-            this.mychart.hideLoading();
+            that.mychart.hideLoading();
         });
-        return this;
+        return that;
     };
     cmutils.CMCharts.prototype.clear = function (callback) {
         if (this.mychart) {
@@ -666,7 +624,149 @@ var cmutils = cmutils || {};
         }
     }
 
-    function convertDataByType(type) {
+    function convertDataToSeries(data, opt) {
+        var arrs = [], robj = {};
+        switch (data.renderType) {
+            case 'axis':
+
+                robj.legenddata = data.dataStore[0].key;
+
+                robj.xAxisdata = data.dataStore[0].itemKey;
+
+
+                var useType = opt.type;
+                if (opt.type == "area") {
+                    useType = "line";
+                    opt.usingArea = true;
+                }
+
+                $.each(data.dataStore[0].itemData, function (i, v) {
+                    var useCommon = data.dataStore[0].common;
+                    var _obj;
+                    if (useCommon!=undefined&&!useCommon) {
+                        _obj = {
+                            name: data.dataStore[0].key[i],
+                            type: !v.yindex ? useType : opt.otherYaxis.type,
+                            data: v.data,
+                            yAxisIndex: Number(v.yindex),
+                            smooth: true,
+                            itemStyle: {
+                                normal: {
+                                    label: {
+                                        show: opt.axisLabel.show,
+                                        position: 'top',
+                                        formatter: function (obj) {
+                                            var sum = 0;
+                                            for (var j = 0; j < v.data.length; j++) {
+                                                sum += v.data[j];
+                                            }
+                                            return opt.axisLabel.usePercent ? ((obj.data / sum) * 100).toFixed(2) + "%" : obj.data;
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                    } else {
+                        _obj = {
+                            name: data.dataStore[0].key[i],
+                            type: useType,
+                            data: v,
+                            yAxisIndex: 0,
+                            smooth: true,
+                            itemStyle: {
+                                normal: {
+                                    label: {
+                                        show: opt.axisLabel.show,
+                                        position: 'top',
+                                        formatter: function (obj) {
+                                            var sum = 0;
+                                            for (var j = 0; j < v.length; j++) {
+                                                sum += v[j];
+                                            }
+                                            return opt.axisLabel.usePercent ? ((obj.data / sum) * 100).toFixed(2) + "%" : obj.data;
+                                        }
+                                    }
+                                }
+                            },
+                            //itemStyle:{normal: {areaStyle: {type: 'default'}}},
+                            //itemStyle: {
+                            //    normal: {
+                            //        barBorderColor: 'rgba(0,0,0,0)',
+                            //        color: 'rgba(0,0,0,0)'
+                            //    },
+                            //    emphasis: {
+                            //        barBorderColor: 'green',
+                            //        color: 'green'
+                            //    }
+                            //},//柱形
+
+                            //markPoint: {
+                            //    data: [
+                            //        {type: 'max', name: '最大值'},
+                            //        {type: 'min', name: '最小值'}
+                            //    ]
+                            //},//在图上标注
+                            //markLine: {
+                            //    data: [
+                            //        {type: 'average', name: '平均值'}
+                            //    ]
+                            //}
+                        };
+                    }
+
+                    if (opt.usingArea) {
+                        $.extend(_obj, {itemStyle: {normal: {areaStyle: {type: 'default'}}}});
+                    }
+                    arrs.push(_obj);
+
+                });
+                robj.arrs = arrs;
+                break;
+            case 'pie':
+                arrs.push({
+                    name: '数据来源',
+                    type: 'pie',
+                    radius: opt.radius, //可以直接写string，表示半径，也可以用数组，之差表示半径['50%', '70%']
+                    //selectedMode: 'single',//single,multiple
+                    center: opt.position, //圆心所在的位置,left,top
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: opt.label.show,
+                                //position: 'inner'
+                                textStyle: {
+                                    fontSize: 12
+                                },
+                                formatter: "{b}\n{c}({d}%)"
+                            },
+                            labelLine: {
+                                show: opt.label.show,
+                            }
+                        },
+//					emphasis: {
+//						label: {
+//							position: 'center',
+//							show: true,
+//							textStyle: {
+//								fontSize: '24',
+//								fontWeight: 'bold'
+//							},
+//							formatter: "{b}\n{d}%"
+//						}
+//					}
+                    },
+                    data: data.dataStore[0]
+                });
+                robj.arrs = arrs;
+                break;
+            case 'map':
+                break;
+            default :
+                break;
+        }
+
+        return robj;
+
     }
 
     function combinOptions(opt) {

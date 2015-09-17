@@ -1,0 +1,26 @@
+1.直角图表
+drawChart(setting,callbacks)
+不带时间轴
+{
+....
+series：[{
+name: string ?legend??,//tooltip的提示标题
+type: 'pie|line...',
+data: [],//line|bar
+}]
+}
+
+带时间轴,除时间轴外，配置写在options中，
+timeline:{}
+options:{
+...
+series：[{
+name: string ?legend??,
+type: 'pie|line...',
+data: [],//line|bar
+},{
+titie:。。。？
+series:[]
+}]
+数据结构修改成这样。除第一个，后面的{}都会再时间轴变化的时候于原配置extend合并，重新渲染
+}

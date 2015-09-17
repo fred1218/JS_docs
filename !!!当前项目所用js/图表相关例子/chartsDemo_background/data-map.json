@@ -1,0 +1,22 @@
+{
+  "renderType": "map",
+  "dataStore":[
+    {
+      "itemKey": ["iphone3","iphone4","iphone5"],
+      "itemData": [
+        [{"name": "北京","value": 111},
+          {"name": "天津","value": 222},
+          {"name": "上海","value": 333},
+          {"name": "重庆","value": 444}],
+        [{"name": "北京","value": 1},
+          {"name": "天津","value": 2},
+          {"name": "上海","value": 3},
+          {"name": "重庆","value": 4}],
+        [{"name": "北京","value": 11},
+          {"name": "天津","value": 22},
+          {"name": "上海","value": 33},
+          {"name": "重庆","value": 44}]
+      ]
+    }
+  ]
+}

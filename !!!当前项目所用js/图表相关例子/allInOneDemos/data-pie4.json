@@ -2,6 +2,7 @@
   "renderType": "pie",
   "dataStore":[
     [
+      {"value":135, "name":"module4"},
       {"value":1548, "name":"module5"}
     ]
   ]

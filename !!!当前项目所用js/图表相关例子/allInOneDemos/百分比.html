@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <script src="echarts-all.js"></script>
+    <script src="cmutils.js"></script>
+</head>
+<body>
+<div id="main" style="height:500px;border:1px solid #ccc;padding:10px;width: 800px"></div>
+<script>
+    var myopt_other = {
+        timeline: false,
+        options: {
+            renderAsImage: false,
+            tooltip: {
+                axisPointer: {
+                    show: true,
+                    type: 'shadow'
+                }
+            },
+            backgroundColor: "#ebeaef",
+            title: {
+                'text': '坐标系图表测试',//主标题
+                'subtext': '数据来自FBI'//副标题
+            },
+            legend: {
+                orient: "horizontal",//'horizontal' | 'vertical'
+                x: 'center',//图标的标题位置，在x轴和y轴
+                y: 'top'
+
+            },
+            xAxis: [{'name': '', 'type': 'category'}],
+            yAxis: [{'name': '数量', 'type': 'value'}, {
+                type: 'value',
+                name: '百分比',
+                axisLabel: {
+                    formatter: '{value} %'
+                }
+            }]
+        }
+    };
+    var mc = new cmutils.CMCharts("#main", myopt_other);
+    mc.drawChart({
+        type: 'bar', usingArea: false,
+        url: "data-axis4.json", axisLabel: {show: false, usePercent: false}, grid: {
+            'y': 50,
+            'y2': 50, x2: 100, x: 100
+        },otherYaxis:{type:"line"}
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "renderType": "axis",
+  "dataStore": [
+    {
+      "key": "邮件营销",
+      "data": [
+        {
+          "itemKey": "周一",
+          "itemData": 120
+        },
+        {
+          "itemKey": "周二",
+          "itemData": 132
+        },
+        {
+          "itemKey": "周三",
+          "itemData": 150
+        },
+        {
+          "itemKey": "周四",
+          "itemData": 220
+        },
+        {
+          "itemKey": "周五",
+          "itemData": 80
+        },
+        {
+          "itemKey": "周六",
+          "itemData": 400
+        },
+        {
+          "itemKey": "周日",
+          "itemData": 300
+        }
+      ]
+    },
+    {
+      "key": "联盟广告",
+      "data": [
+        {
+          "itemKey": "周一",
+          "itemData": 220
+        },
+        {
+          "itemKey": "周二",
+          "itemData": 182
+        },
+        {
+          "itemKey": "周三",
+          "itemData": 191
+        },
+        {
+          "itemKey": "周四",
+          "itemData": 234
+        },
+        {
+          "itemKey": "周五",
+          "itemData": 290
+        },
+        {
+          "itemKey": "周六",
+          "itemData": 330
+        },
+        {
+          "itemKey": "周日",
+          "itemData": 310
+        }
+      ]
+    }
+  ]
+}
