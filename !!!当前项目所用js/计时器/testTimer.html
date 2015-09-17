@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require.js"></script>
+    <script>
+        /**
+         * 模块化方式调用
+         */
+        require.config({
+            paths: {
+                'jquery': "jquery-1.11.1.min",
+                'timer': 'jq.cm.timer'
+            }
+        });
+        require(['timer'], function () {
+            $('#test').cmtimerUtil({
+                convert: false,
+                totalTime: "50",
+                onTimeFlies: function (c) {
+                    $(this).text(JSON.stringify(c));
+                }
+            });
+        })
+    </script>
+    <!--<script src="moment.js"></script>
+<script src="jq.cm.timer.js"></script>-->
+</head>
+
+<body>
+<div id="test" style="width: 200px;height: 100px"></div>
+<script>
+</script>
+</body>
+
+</html>

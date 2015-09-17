@@ -159,7 +159,7 @@
                 obj.mins = obj.mins % 60;
             }
             obj.sencs = c % 60;
-            console.debug(JSON.stringify(obj));
+        
             return obj;
         }
 
