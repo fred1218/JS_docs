@@ -63,8 +63,8 @@ define(['jquery'], function ($) {
             }
             //init的时候初始化的dom操作
             var $fromEl = this.$units.eq(this.opt.from), fromEl = $fromEl[0], $otherEls = this.$units.not(fromEl);
-            $fromEl.addClass(this.opt.openedClass);//起点回到首位
-            $otherEls.removeClass(this.opt.openedClass);
+            $fromEl.addClass(this.opt.openedClass).removeClass(this.opt.closedClass);//起点回到首位
+            $otherEls.removeClass(this.opt.openedClass).addClass(this.opt.closedClass);
         }
         return this;
     };
@@ -78,13 +78,13 @@ define(['jquery'], function ($) {
             var index = opt.from;
             var count = that.counts;
             var $lottery = that.$lottery;
-            that.$units.eq(index).addClass(opt.openedClass);
+            that.$units.eq(index).addClass(opt.openedClass).removeClass(opt.closedClass);
             index++;
             if (index > count - 1) {
                 index = 0;
             }
-            that.$units.eq(index).addClass(opt.openedClass);
-            that.$units.eq(index - 1).removeClass(opt.openedClass);
+            that.$units.eq(index).addClass(opt.openedClass).removeClass(opt.closedClass);
+            that.$units.eq(index - 1).removeClass(opt.openedClass).addClass(opt.closedClass);
             opt.from = index;
             that.times += 1;
             //减速范围是
