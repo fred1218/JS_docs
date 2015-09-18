@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title></title>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-	<script src="Lott.js" type="text/javascript" charset="utf-8"></script>
+	<script src="require.js" type="text/javascript" charset="utf-8"></script>
 	<style type="text/css">
 		.each {
 			width: 100px;
@@ -22,7 +22,19 @@
 
 <body>
 <button id="start" class="btn">开始[6]</button>
-<button id="setOption" class="btn">奖品为第3个</button>
+<select id="selectPrize">
+	<option value="-1">选择第几个为奖品</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+</select>
 <button id="pause">pause</button>
 <button id="pause1">pause1秒</button>
 <button id="continue">continue</button>
@@ -41,35 +53,45 @@
 	<div class="lottery-unit each">10</div>
 </div>
 <script type="text/javascript">
-	var lt = new Lott("#start", ".lottery-unit", "#lottery");
-	//初始化
-	lt.init({
-		prizeInfo: 6,
-		onEndding: function () {
+	require.config({
+		paths: {
+			jquery: 'jquery-1.11.1.min',
+//			lottery: 'Lott'
 		}
-
 	});
-	$('#setOption').on('click', function () {
-		lt.setOption({
-			prizeInfo: 3
+	require(['Lott'], function (Lott) {
+		var lt = new Lott("#start", ".lottery-unit", "#lottery");
+		//初始化
+		lt.init({
+			prizeInfo: 6,
+			onEndding: function () {
+			}
+
+		});
+		$('#selectPrize').on('change', function () {
+			lt.setOption({
+				prizeInfo: $(this).val()
+			});
+		})
+
+
+		$('#pause').on('click', function () {
+			lt.pause()
+		})
+		$('#pause1').on('click', function () {
+			lt.pause(1000)
+		})
+		$('#continue').on('click', function () {
+			lt.roll()
+		})
+		$('#destroy').on('click', function () {
+			lt.restore()
+		})
+		$('#restart').on('click', function () {
+			lt.restart()
 		})
 	})
 
-	$('#pause').on('click', function () {
-		lt.pause()
-	})
-	$('#pause1').on('click', function () {
-		lt.pause(1000)
-	})
-	$('#continue').on('click', function () {
-		lt.roll()
-	})
-	$('#destroy').on('click', function () {
-		lt.restore()
-	})
-	$('#restart').on('click', function () {
-		lt.restart()
-	})
 </script>
 </body>
 
