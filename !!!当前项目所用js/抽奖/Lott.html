@@ -22,7 +22,7 @@
 
 <body>
 <button id="start" class="btn">开始[6]</button>
-<button id="setOption" class="btn">奖品为第一个</button>
+<button id="setOption" class="btn">奖品为第3个</button>
 <button id="pause">pause</button>
 <button id="pause1">pause1秒</button>
 <button id="continue">continue</button>
@@ -44,13 +44,14 @@
 	var lt = new Lott("#start", ".lottery-unit", "#lottery");
 	//初始化
 	lt.init({
+		prizeInfo: 6,
 		onEndding: function () {
-		},
-		prizeInfo: 6
+		}
+
 	});
 	$('#setOption').on('click', function () {
 		lt.setOption({
-			prizeInfo: 1
+			prizeInfo: 3
 		})
 	})
 
