@@ -89,8 +89,6 @@ Lott.prototype.roll = function () {
 
         var jiansuScope = that.totalTimes + count; //减速范围是
         var randomTimes = (opt.prizeInfo ? (opt.prizeInfo - 1) : Math.floor(Math.random() * count + 1));
-        console.log('randomTimes,也就是奖品：', randomTimes);
-
         if (that.times >= jiansuScope + randomTimes) {
             clearTimeout(that.timer);
             if (opt.onEndding && $.isFunction(opt.onEndding)) {
