@@ -60,7 +60,7 @@ Lott.prototype.init = function (option) {
         } else {
             this.opt = $.extend(true, this.opt, option);
         }
-
+        //init的时候初始化的dom操作
         var $fromEl = this.$units.eq(this.opt.from), fromEl = $fromEl[0], $otherEls = this.$units.not(fromEl);
         $fromEl.addClass(this.opt.openedClass);//起点回到首位
         $otherEls.removeClass(this.opt.openedClass);
