@@ -96,9 +96,7 @@ define(['jquery'], function ($) {
                 if (opt.onEndding && $.isFunction(opt.onEndding)) {
                     $.when(function () {
                         opt.onEndding.call(that);
-                        return "hello"
                     }()).done(function (param) {
-                        alert(param);
                         setTimeout(function () {
                             that.restore();
                         }, 1000);
