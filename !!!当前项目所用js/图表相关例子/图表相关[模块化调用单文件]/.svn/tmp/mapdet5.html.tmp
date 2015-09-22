@@ -1,0 +1,61 @@
+<<<<<<< .mine
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>全国各地区交易预警</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+			body {
+				background: url(bg.jpg) repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="innertit">—— 全国各地区交易预警 ——</div>
+			<div class="smalltit">报警城市越明显连续无交易的时间越长，请尽快调整市场方案，提升交易额 <a href="#" class="back">&lt; 返回</a></div>
+			<div id="demo1">
+				<div id="dchart1" style="height: 690px;"></div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	<script src="mapdet5.js" type="text/javascript" charset="utf-8"></script>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>map</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="echarts-all.js"></script>
+		<script src="mapdet4.js" type="text/javascript" charset="utf-8" defer></script>
+		<style>
+			body {
+				background-color:#5675ba;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="innertit">—— 全国各地区交易预警 ——</div>
+			<div class="smalltit">报警城市越明显连续无交易的时间越长，请尽快调整市场方案，提升交易额 <a href="mapdet.html" class="back">&lt; 返回</a></div>
+			<div id="demo1">
+				<div id="dchart1" style="height: 800px;"></div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+	</script>
+
+>>>>>>> .r1991
+</html>
