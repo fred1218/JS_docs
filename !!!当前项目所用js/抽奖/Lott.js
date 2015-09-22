@@ -28,6 +28,7 @@ define(['jquery'], function ($) {
         //
         //};
         //this.events.push(btnEvs);
+        //TODO 给开始按钮注册事件,插件内部设置防止可点击状态的外部设置
         $(this.btn).on('click.begin', null, this, function (ev) {
             var t = ev.data;
             if (t.clickable) {
