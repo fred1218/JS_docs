@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="Lott.js"></script>
+	<style type="text/css">
+		.each {
+			width: 100px;
+			height: 50px;
+			background: green;
+			margin: 10px;
+		}
+
+		.active {
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+<button id="start" class="btn">开始[6]</button>
+<select id="selectPrize">
+	<option value="-1">选择第几个为奖品</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+</select>
+<button id="pause">pause</button>
+<button id="pause1">pause1秒</button>
+<button id="continue">continue</button>
+<button id="destroy">destroy</button>
+<button id="restart">restart</button>
+<div class="cj_box" id="lottery" style="height: 100px;width: 1800px;border: 1px solid #000;	display: flex;">
+	<div class="lottery-unit each">1</div>
+	<div class="lottery-unit each" style="position: absolute;left: 500px;top: 100px;">2</div>
+	<div class="lottery-unit each">3</div>
+	<div class="lottery-unit each">4</div>
+	<div class="lottery-unit each">5</div>
+	<div class="lottery-unit each">6</div>
+	<div class="lottery-unit each">7</div>
+	<div class="lottery-unit each">8</div>
+	<div class="lottery-unit each">9</div>
+	<div class="lottery-unit each">10</div>
+</div>
+<script type="text/javascript">
+	var lt = new Lott("#start", ".lottery-unit", "#lottery");
+	//初始化
+	lt.init({
+		prizeInfo: 6,
+		onEndding: function () {
+			alert('结束时回调');
+		}
+
+	});
+	$('#selectPrize').on('change', function () {
+		lt.setOption({
+			prizeInfo: $(this).val()
+		});
+	})
+
+
+	$('#pause').on('click', function () {
+		lt.pause()
+	})
+	$('#pause1').on('click', function () {
+		lt.pause(1000)
+	})
+	$('#continue').on('click', function () {
+		lt.roll()
+	})
+	$('#destroy').on('click', function () {
+		lt.restore()
+	})
+	$('#restart').on('click', function () {
+		lt.restart()
+	})
+
+</script>
+</body>
+
+</html>

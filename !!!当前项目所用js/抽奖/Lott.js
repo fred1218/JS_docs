@@ -1,4 +1,10 @@
-define(['jquery'], function ($) {
+;(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else {
+        this.Lott = factory(jQuery);
+    }
+})(function ($) {
     var Lott = function (btn, unit, container) {
         this.unit = unit;
         this.btn = btn;
@@ -165,4 +171,4 @@ define(['jquery'], function ($) {
     };
 
     return Lott;
-})
+});
