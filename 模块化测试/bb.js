@@ -14,5 +14,4 @@ define(['cc','jquery'], function($) {
 			console.debug('b1');
 		}
 	}
-
-})
+});
