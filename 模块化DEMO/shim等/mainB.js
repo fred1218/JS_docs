@@ -5,6 +5,8 @@ require.config({
 });
 
 require(['ma'], function(MA) {
+	com('in mainB');
+	console.debug('这里输出证明moduleB的依赖也可以被引用进来');
 	var m1 = new MA('zhangsan', 20);
 	console.debug(m1.name, m1.age);
 });

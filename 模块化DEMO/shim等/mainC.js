@@ -1,14 +1,16 @@
 require.config({
 	shim: {
 		ModualC: {
-			deps: [],
+			deps: ['common'],
 			exports: 'CA'
 		},
 	}
 });
 
 require(['ModualC'], function(MA) {
+	com('in mainC');
 	var m1 = new MA('zhangsan', 20);
+	var m2 = new MA('lisi', 20, 'shanghai'); //依然是CA
 	console.debug(m1.name, m1.age);
 });
 require(['ModualC'], function(MA) {
