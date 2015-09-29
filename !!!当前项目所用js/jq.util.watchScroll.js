@@ -2,13 +2,13 @@
  * Created by guowei.dong on 2015/8/14.
  */
 ;
-(function (factory) {
+(function (global, factory) {
     if (typeof define === "function" && define.amd) {
         define(['jquery'], factory);
     } else {
         factory(jQuery);
     }
-}(function ($) {
+}(this, function ($) {
     $.fn.watchScroll = function (method) {
         var setting = {
             scrollEl: null,//默认window
