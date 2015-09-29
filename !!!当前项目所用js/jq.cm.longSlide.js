@@ -448,7 +448,6 @@
                                                     top: $cont.position().top += elH * each_scroll_num
                                                 };
                                             }
-
                                             scrollToWhich(_tmp, direc, lscrolledNums, rscrolledNums);
                                         }
                                         break;
@@ -546,7 +545,6 @@
                             if (opt.afterEachShow && $.isFunction(opt.afterEachShow)) {
                                 opt.afterEachShow.call($cont, lscrolledNums, rscrolledNums);
                             }
-
                         }
 
                         //到头之后如何重置
