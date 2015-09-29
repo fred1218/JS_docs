@@ -11,7 +11,7 @@
 }(this, function ($) {
     $.fn.watchScroll = function (method) {
         var setting = {
-            scrollEl: null,//默认window
+            scrollEl: null, //默认window
             onShowing: null,
             onHiding: null
         };
@@ -24,10 +24,10 @@
                     if (typeof opt === 'undefined') {
                         opt = $.extend(true, {}, setting, option);
                         var scrollEl = opt.scrollEl ? opt.scrollEl : window;
-                        stateVar["elHeight"] = $cont.height();//元素的高度
-                        stateVar["elTop"] = $cont.offset().top;//当前元素的top距离
-                        stateVar['w_height'] = $(scrollEl).height();//window当前的高度
-                        stateVar['currentScroll'] = $(scrollEl).scrollTop();//window已滚动的距离
+                        stateVar["elHeight"] = $cont.height(); //元素的高度
+                        stateVar["elTop"] = $cont.offset().top; //当前元素的top距离
+                        stateVar['w_height'] = $(scrollEl).height(); //window当前的高度
+                        stateVar['currentScroll'] = $(scrollEl).scrollTop(); //window已滚动的距离
                         //窗口resize，重新计算window的高度
                         $(scrollEl).on('resize.watchScroll', function (ev) {
                             stateVar['w_height'] = $(this).height();
@@ -66,4 +66,8 @@
             return this;
         }
     }
+    var MK = function (selector, method, option) {
+        $(selector).watchScroll(method, option);
+    };
+    return MK;
 }));
