@@ -1,4 +1,4 @@
-define(['cc','jquery'], function($) {
+define(['../cc','jquery'], function($) {
 	alert($);
 	console.debug('调用bb',$);
 	c();
