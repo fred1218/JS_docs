@@ -3,7 +3,7 @@
  */
 var cmutils = cmutils || {};
 (function (w, d, $, ec, cmutils) {
-
+    cmutils.version="20151019";
     cmutils.CMCharts = function (selector, option) {
         var that = this;
         var defaultSettings = {
