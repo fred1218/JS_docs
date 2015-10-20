@@ -3,7 +3,7 @@
  */
 var cmutils = cmutils || {};
 (function (w, d, $, ec, cmutils) {
-    cmutils.version="20151019";
+    cmutils.version = "201510191035";
     cmutils.CMCharts = function (selector, option) {
         var that = this;
         var defaultSettings = {
@@ -409,6 +409,7 @@ var cmutils = cmutils || {};
 
         } else {
             insOpt = $.extend(true, {}, opt.options, pieSetting.options);
+            $.extend(true, insOpt.tooltip, setting.tooltip);
             newopt = {
                 legend: {
                     data: titleArr,
@@ -580,6 +581,7 @@ var cmutils = cmutils || {};
                                 show: true, showLabelPercent: false
                             }
                         };
+
                         $.extend(true, defaultSettings, setting);
                         drawPie.call(that, defaultSettings, data, returnCall);
                         break;
@@ -643,7 +645,7 @@ var cmutils = cmutils || {};
                 $.each(data.dataStore[0].itemData, function (i, v) {
                     var useCommon = data.dataStore[0].common;
                     var _obj;
-                    if (useCommon!=undefined&&!useCommon) {
+                    if (useCommon != undefined && !useCommon) {
                         _obj = {
                             name: data.dataStore[0].key[i],
                             type: !v.yindex ? useType : opt.otherYaxis.type,

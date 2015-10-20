@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>金鹿财行经营分析</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+			body {
+				background: url(bg.jpg) repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="innertit">—— 金鹿财行经营分析 ——</div>
+			<div id="demo1">
+				<div class="alltitle">金鹿财行交易趋势</div>
+                <div class="pic"><img src="tit01.png"></div>
+                <div class="hr_10"></div>
+				<div id="dchart1" style="height: 400px;"></div>
+			</div>
+			<div id="demo2">
+				<div class="alltitle">各公司票房占比</div>
+                <div class="pic"><img src="tit02.png"></div>
+                <div class="hr_10"></div>
+				<div id="dchart2" style="height: 378px;"></div>
+			</div>
+			<div id="demo3">
+				<div class="alltitle">分公司交易情况</div>
+				<div id="dchart3" style="height: 378px;"></div>
+			</div>
+			<div class="footer" style="background-color: #fff;display: none;">
+				<div style="position: relative;width: 200px;"><a href="mapdet.html">经营分析系统</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet2.html">金融财行经营分析</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet3.html">今日交易详情</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet4.html">金鹿累计交易情况统计</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet5.html">全国各地区交易预警</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet6.html">火箭-总交易额</a></div>
+				<div style="position: relative;width: 200px;"><a href="maptype.html">经营分析系统</a></div>
+			</div>
+		</div>
+<a href="mapdet4.html" class="mapbut xxxa">金鹿累计交易情况统计</a>
+	</body>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	<script src="mapdet2.js" type="text/javascript" charset="utf-8"></script>
+</html>

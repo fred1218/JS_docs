@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>电影转消费品经营分析系统</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+			body {
+				background-color: #00274e;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap_map">
+			<div class="mapmode">
+				<div class="mapmain">
+					<div class="maintit">—— 电影转消费品经营分析系统 ——</div>
+					<div style="background-color: ; height: 700px;" id="dchart1"></div>
+					<span class="sh_map">上海</span>
+				</div>
+				<div class="tableclum">
+					<div class="bot">
+						<h3>全国分公司分布图</h3>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr class="title">
+								<td>公司</td>
+								<td>分公司数量</td>
+								<td>涵盖地区</td>
+							</tr>
+							<tr>
+								<td>金鹿 </td>
+								<td>24</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>翰典</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>菜苗金融</td>
+								<td>4</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>东虹桥资管</td>
+								<td>3</td>
+								<td>12</td>
+							</tr>
+						</table>
+						<a href="mapdet.html" class="mapbut xxxa" >经营分析系统</a>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="footer" style="background-color: #fff;display: none;">
+				<div style="position: relative;width: 200px;"><a href="mapdet.html">经营分析系统</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet2.html">金融财行经营分析</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet3.html">今日交易详情</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet4.html">金鹿累计交易情况统计</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet5.html">全国各地区交易预警</a></div>
+				<div style="position: relative;width: 200px;"><a href="mapdet6.html">火箭-总交易额</a></div>
+				<div style="position: relative;width: 200px;"><a href="maptype.html">经营分析系统</a></div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	<script src="maptype.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
