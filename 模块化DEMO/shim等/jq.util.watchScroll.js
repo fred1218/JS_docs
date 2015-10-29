@@ -26,7 +26,6 @@
                     var stateVar = {};
                     if (typeof opt === 'undefined') {
                         opt = $.extend(true, {}, setting, option);
-                        console.debug(opt);
                         var scrollEl = opt.scrollEl ? opt.scrollEl : window;
                         stateVar["elHeight"] = $cont.height(); //元素的高度
                         stateVar["elTop"] = $cont.offset().top; //当前元素的top距离
@@ -42,7 +41,6 @@
                         })
                     } else {
                         $.extend(true, opt, option);
-                        console.debug(opt);
                     }
                     $cont.data("opt.watchScroll", opt);
                     var init = function () {
