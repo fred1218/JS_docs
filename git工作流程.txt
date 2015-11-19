@@ -1,5 +1,5 @@
 
-暂定一个git工作流程
+暂定一个git工作流程,开发dev，自己dgw
 
 1.建自己的分支，基于当前最新的master或者dev
 
@@ -17,15 +17,19 @@ git commit -m"XXX"
 3.切换到主分支或者dev
 git checkout dev；
 git pull
+然后切回自己的分支
+git  checkout dgw
+
 
 4.同步自己的分支
-git rebase master;//有冲突的话要merge。
+git rebase dev;//有冲突的话要merge。
 
 merge完之后继续commit
 
 5.切换回主分支
 
 在主分支上与自己的分支进行merge。此时不会在主分支上进行冲突合并操作
+git merge dgw
 //在自己的分支同步rebase master就是为了这里干净
 
 6.git push origin master或者dev的。
