@@ -34,7 +34,7 @@ git merge dgw
 
 6.git push origin master或者dev的。
 
+==============
+git reset (--hard) commitid(撤销这个操作，操作以后的都会被放到暂存区，加hard会被删除)
 
-//界面对应的souseTree。有些gui上的命令找不到，，我只用sourceTree进行push操作。。
-
-
+git revert 撤销某次提交，并自动将撤销操作新建一个提交
