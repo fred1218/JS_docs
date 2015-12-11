@@ -16,7 +16,7 @@
   ],
   "author": "fred",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "http-server": "^0.8.0"
   }
 }
